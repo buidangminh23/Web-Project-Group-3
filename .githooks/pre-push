@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+while read -r local_ref local_sha remote_ref remote_sha; do
+  case "$local_sha" in
+    0000000000000000000000000000000000000000) continue ;;
+  esac
+  for commit in $(git rev-list "$local_sha"); do
+    identity=$(git show -s --format='%an <%ae>%n%cn <%ce>' "$commit")
+    if printf '%s\n' "$identity" | grep -Eiq '(claude|anthropic)'; then
+      printf '%s\n' "Push blocked: prohibited Claude/Anthropic identity in $commit." >&2
+      exit 1
+    fi
+    if git show -s --format=%B "$commit" | grep -Eiq '^[[:space:]]*(Co-authored-by|Signed-off-by):.*(claude|anthropic)|^[[:space:]]*Claude-Session:|Generated(-by:| with| by).*claude'; then
+      printf '%s\n' "Push blocked: prohibited Claude/Anthropic attribution in $commit." >&2
+      exit 1
+    fi
+  done
+done

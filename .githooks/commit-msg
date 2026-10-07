@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+for identity in GIT_AUTHOR_IDENT GIT_COMMITTER_IDENT; do
+  value=$(git var "$identity")
+  if printf '%s\n' "$value" | grep -Eiq '(claude|anthropic)'; then
+    printf '%s\n' 'Commit blocked: Claude/Anthropic author or committer identity is not allowed.' >&2
+    exit 1
+  fi
+done
+if grep -Eiq '^[[:space:]]*(Co-authored-by|Signed-off-by):.*(claude|anthropic)|^[[:space:]]*Claude-Session:|Generated(-by:| with| by).*claude|^[[:space:]]*(Co-authored-by|Signed-off-by):.*noreply@anthropic[.]com' "$1"; then
+  printf '%s\n' 'Commit blocked: Claude/Anthropic attribution is not allowed. Preserve real human attribution.' >&2
+  exit 1
+fi
