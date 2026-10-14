@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Current vacancies in the Apple Online Store web team in Sydney: Front-End Web Developer and Accessibility and UX Designer.">
+  <meta name="keywords" content="Apple jobs, front-end web developer, UX designer, accessibility, Sydney, vacancies">
+  <meta name="author" content="Group 3, COS10026">
+  <title>Careers at Apple - Current jobs</title>
+
+  <!--
+    jobs.html - Job descriptions page of the Apple Careers recruitment website.
+    COS10026 Web Technology Project, Applied Web Project Part 1, Group 3.
+    Student project: not affiliated with Apple Inc. Both vacancies are fictional.
+
+    Generative AI acknowledgement (unit requirement):
+    Some parts of this code were generated or adapted using Claude (Anthropic, Claude Opus 5.5, October 2026).
+    Claude drafted the job descriptions and the markup structure; all AI-generated code and text
+    were reviewed and modified by the author before use.
+    Prompt used (translated from Vietnamese): "Complete Applied Web Project Part 1 for me. Our company is Apple.
+    Meet every requirement of the brief at the highest marking level, and only use the HTML and CSS taught in the unit."
+  -->
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Embedded CSS example (required on every page).
+       The "Apply for this role" line under each job is only used on this page. -->
+  <style>
+    .job-apply {
+      margin-top: 1.5em;
+      margin-bottom: 0;
+      padding-top: 1em;
+      border-top: 1px solid #d2d2d7;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Site header: logo and the main navigation bar shared by all four pages -->
+  <header id="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <!-- Apple logo glyph adapted from: Devicon "apple-original" icon, https://devicon.dev/ (MIT licence).
+             Accessed: 07 Oct 2026. Apple and the Apple logo are trademarks of Apple Inc. -->
+        <img src="images/logo.png" alt="Apple logo" width="48" height="48">
+        Apple Careers
+      </a>
+
+      <!-- Main navigation: the same four links on every page; "current" marks this page -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html" class="current">Jobs</a></li>
+          <li><a href="apply.html">Apply</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Visible notice on every page: this is a student project, not Apple's real careers website -->
+  <p class="project-banner">
+    <strong>Student project for COS10026 at Swinburne.</strong> This is not an official Apple website and all jobs are fictional.
+  </p>
+
+  <main>
+    <div class="container">
+
+      <h1>Current jobs</h1>
+      <p>
+        We have two openings in the Apple Online Store web team in Sydney.
+        Read each job description, note its five-character reference number, then use it on the
+        <a href="apply.html">application form</a>.
+      </p>
+
+      <!-- Aside: related but non-essential information about working at Apple.
+           Required for jobs.html: floated right, 25% wide, with margin, padding and border (see section 6 of styles.css).
+           It is placed before the job sections so the jobs flow down its left side. -->
+      <aside aria-labelledby="life-heading">
+        <h2 id="life-heading">Life at Apple</h2>
+        <p>Benefits offered with both roles:</p>
+        <ul>
+          <li>Discounts on Apple products</li>
+          <li>Education and training reimbursement</li>
+          <li>Hybrid work: three days a week in the office</li>
+          <li>Paid parental leave</li>
+          <li>Wellbeing and volunteering days</li>
+        </ul>
+        <h3>Closing date</h3>
+        <p>Applications for both roles close on <strong>30 November 2026</strong>.</p>
+        <h3>Need adjustments?</h3>
+        <p>
+          If you need any changes to the application or interview process, let us know in the
+          <em>Other skills</em> box of the form and we will contact you.
+        </p>
+      </aside>
+
+      <!-- Job 1. Each job is its own section with h2 (job title), h3 (topics) and h4 (requirement types),
+           so the page uses more than two heading levels. -->
+      <section class="job" id="job-afe26" aria-labelledby="afe26-title">
+        <h2 id="afe26-title">Front-End Web Developer, Apple Online Store</h2>
+        <p>Reference number: <span class="ref">AFE26</span></p>
+
+        <p>
+          Build and improve the pages customers use to explore, compare and buy Apple products online.
+          You will turn designs into fast, standards-based and accessible HTML and CSS that works on every
+          screen size, from iPhone to Pro Display XDR.
+        </p>
+
+        <!-- Key facts as a description list: term = fact name, description = value -->
+        <section aria-labelledby="afe26-facts">
+          <h3 id="afe26-facts">Job details</h3>
+          <dl class="job-facts">
+            <dt>Salary</dt>
+            <dd>AUD $115,000 to $135,000 per year, plus superannuation</dd>
+            <dt>Reports to</dt>
+            <dd>Engineering Manager, Online Store Web Team</dd>
+            <dt>Location</dt>
+            <dd>Sydney, NSW (hybrid)</dd>
+            <dt>Work type</dt>
+            <dd>Full time, permanent</dd>
+            <dt>Closing date</dt>
+            <dd>30 November 2026</dd>
+          </dl>
+        </section>
+
+        <section aria-labelledby="afe26-duties">
+          <h3 id="afe26-duties">Key responsibilities</h3>
+          <ul>
+            <li>Build product and checkout pages in semantic HTML5 and CSS3 from design files.</li>
+            <li>Make every layout responsive and test it on phones, tablets and desktop browsers.</li>
+            <li>Check pages against accessibility guidelines and fix issues found with tools such as WAVE.</li>
+            <li>Keep code valid using the W3C HTML and CSS validators.</li>
+            <li>Review other developers' code and share what you learn with the team.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="afe26-req">
+          <h3 id="afe26-req">Requirements</h3>
+          <h4>Essential (in order of importance)</h4>
+          <ol>
+            <li>Strong skills in HTML5 and CSS3, including Flexbox, Grid and media queries.</li>
+            <li>Experience building accessible websites, including forms and tables.</li>
+            <li>Experience with Git and GitHub in a team.</li>
+            <li>Clear written and spoken communication in English.</li>
+          </ol>
+          <h4>Preferable</h4>
+          <ul class="preferable">
+            <li>A degree or diploma in IT, computer science or a related field.</li>
+            <li>Experience with e-commerce or retail websites.</li>
+            <li>Experience working in an Agile team using Jira.</li>
+          </ul>
+        </section>
+
+        <p class="job-apply">
+          <a class="button" href="apply.html">Apply for this role</a>
+          Use reference number <span class="ref">AFE26</span>.
+        </p>
+      </section>
+
+      <!-- Job 2 -->
+      <section class="job" id="job-aux26" aria-labelledby="aux26-title">
+        <h2 id="aux26-title">Accessibility and UX Designer, Apple Online Store</h2>
+        <p>Reference number: <span class="ref">AUX26</span></p>
+
+        <p>
+          Help make shopping with Apple simple for every customer, including people who use screen readers,
+          keyboards, voice control or larger text. You will design page layouts, test them with real users
+          and work with developers to turn the results into improvements.
+        </p>
+
+        <section aria-labelledby="aux26-facts">
+          <h3 id="aux26-facts">Job details</h3>
+          <dl class="job-facts">
+            <dt>Salary</dt>
+            <dd>AUD $105,000 to $125,000 per year, plus superannuation</dd>
+            <dt>Reports to</dt>
+            <dd>Design Lead, Online Store Experience</dd>
+            <dt>Location</dt>
+            <dd>Sydney, NSW (hybrid)</dd>
+            <dt>Work type</dt>
+            <dd>Full time, permanent</dd>
+            <dt>Closing date</dt>
+            <dd>30 November 2026</dd>
+          </dl>
+        </section>
+
+        <section aria-labelledby="aux26-duties">
+          <h3 id="aux26-duties">Key responsibilities</h3>
+          <ul>
+            <li>Design page layouts, forms and navigation for the online store.</li>
+            <li>Run usability tests with customers, including people with disability.</li>
+            <li>Check colour contrast, heading order, alternative text and form labels in every design.</li>
+            <li>Write clear, plain-language content for product and help pages.</li>
+            <li>Make sure designs avoid dark patterns such as hidden costs or trick questions.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="aux26-req">
+          <h3 id="aux26-req">Requirements</h3>
+          <h4>Essential (in order of importance)</h4>
+          <ol>
+            <li>Examples of user-centred and accessible design work, from a portfolio or from study, work or community projects.</li>
+            <li>Good knowledge of web accessibility guidelines (WCAG).</li>
+            <li>Experience planning and running usability tests.</li>
+            <li>Basic understanding of HTML and CSS.</li>
+          </ol>
+          <h4>Preferable</h4>
+          <ul class="preferable">
+            <li>Experience testing with screen readers such as VoiceOver.</li>
+            <li>Experience designing for e-commerce or retail.</li>
+            <li>A qualification in design, human-computer interaction or a related field.</li>
+          </ul>
+        </section>
+
+        <p class="job-apply">
+          <a class="button" href="apply.html">Apply for this role</a>
+          Use reference number <span class="ref">AUX26</span>.
+        </p>
+      </section>
+
+      <!-- Apple headquarters with an embedded Google Map.
+           Map embed adapted from: Google Maps "Share > Embed a map"
+           https://www.google.com/maps/place/Apple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014
+           Accessed: 07 Oct 2026.
+           <iframe> displays another web page inside this page. It is plain HTML (no JavaScript in our code);
+           the map itself is loaded from Google. title describes the map for screen reader users,
+           and loading="lazy" (taught for images in Week 2) waits until the map is near the screen. -->
+      <section id="location" class="clear" aria-labelledby="location-heading">
+        <h2 id="location-heading">Apple headquarters</h2>
+        <p>
+          Apple's headquarters is <strong>Apple Park, One Apple Park Way, Cupertino, California 95014, United States</strong>.
+          The Online Store teams there set the direction for the store, and our Sydney team works closely with them.
+        </p>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sApple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014!6i15"
+                  title="Google Map showing Apple Park, Apple headquarters in Cupertino, California"
+                  width="600" height="360" loading="lazy"></iframe>
+        </div>
+        <p class="note">
+          The map is provided by Google, so Google may set cookies when it loads.
+          You can also <a href="https://www.google.com/maps/place/Apple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014">open Apple Park in Google Maps</a>.
+        </p>
+      </section>
+
+      <!-- Inline CSS example (required on every page).
+           This one closing note is centred; it is the only centred paragraph on the site, so a class is not needed.
+           class="clear" makes sure it starts below the floated aside. -->
+      <p class="clear" style="text-align: center;">
+        Don't see the right role? Check back soon: new positions are added every month.
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Site footer shared by all pages -->
+  <footer id="site-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <section aria-labelledby="footer-project">
+          <h2 id="footer-project">Project links</h2>
+          <ul>
+            <li><a href="https://cos10026-group3.atlassian.net/jira/software/projects/WWTP/summary">Jira project board</a></li>
+            <li><a href="https://github.com/dangminh232006/Web-Project-Group-3">GitHub repository</a></li>
+            <li><a href="https://dangminh232006.github.io/Web-Project-Group-3/">Live site on GitHub Pages</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="footer-contact">
+          <h2 id="footer-contact">Contact</h2>
+          <ul>
+            <li>Email: <a href="mailto:info@apple-careers.example">info@apple-careers.example</a></li>
+            <li>Student contact: <a href="mailto:105716425@student.swin.edu.au">105716425@student.swin.edu.au</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="footer-site">
+          <h2 id="footer-site">Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About us</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="disclaimer">
+        &copy; 2026 Group 3, COS10026 Web Technology Project, Swinburne University of Technology.
+        This is a student project and is not affiliated with, authorised or endorsed by Apple Inc.
+        Apple and the Apple logo are trademarks of Apple Inc. All vacancies on this site are fictional.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
