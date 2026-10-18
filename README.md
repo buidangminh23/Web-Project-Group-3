@@ -6,7 +6,7 @@ COS10026 Web Technology Project
 A static recruitment website for **Apple** (the Apple Online Store web team in Sydney),
 built with HTML5 and CSS3 only. No JavaScript, no frameworks, no build step.
 
-- Live site: https://dangminh232006.github.io/Web-Project-Group-3/
+- Planned live site (unavailable on 18 October 2026; repository private and Pages disabled): https://dangminh232006.github.io/Web-Project-Group-3/
 - Repository: https://github.com/dangminh232006/Web-Project-Group-3
 - Jira board: https://cos10026-group3.atlassian.net/jira/software/projects/WWTP/summary
 
@@ -25,7 +25,7 @@ built with HTML5 and CSS3 only. No JavaScript, no frameworks, no build step.
 | `jobs.html` | Two job descriptions (`AFE26` Front-End Web Developer, `AUX26` Accessibility and UX Designer), each a `<section>` with salary, reporting line, responsibilities, essential (`<ol>`) and preferable (`<ul>`) requirements; `<aside>` floated right at 25%; embedded Google Map of Apple headquarters (Apple Park) |
 | `apply.html` | Job application form, `method="post"` to `https://mercury.swin.edu.au/it000000/formtest.php`, HTML5 validation with `pattern`, `maxlength`, `required`, `type="email"`; layout with CSS Grid |
 | `about.html` | Group name and class details (nested list), members, contributions and quotes (definition list), group photo in a bordered `<figure>`, fun facts table with hover effect |
-| `styles.css` | The single external stylesheet, 10 commented sections including responsive media queries and print styles |
+| `styles.css` | The single external stylesheet, including responsive media queries and print styles |
 
 Every page has the four meta tags taught in Week 1 (charset, description, keywords, author), the
 viewport meta tag (Week 5), the shared navigation and footer, one embedded `<style>` example and one
@@ -93,7 +93,11 @@ Details: `docs/test-report.md`.
 ## Acknowledgements
 
 - Generative AI: Claude (Anthropic, Claude Opus 5.5, October 2026) was used for code suggestions,
-  page wording and the two illustrations. Each file says how it was used and includes the prompt,
-  as required by the unit.
-- External sources: Apple logo glyph from Devicon (MIT); everything else is original.
-  See `docs/references.md`.
+  page wording and the two illustrations. The prompt used, translated from Vietnamese, was:
+  "Complete Applied Web Project Part 1 for me. Our company is Apple. Meet every requirement
+  of the brief at the highest marking level, and only use the HTML and CSS taught in the unit."
+  The group reviewed and edited AI-assisted material before use. Code comments containing
+  these acknowledgements were removed on 18 October 2026 at the coordinator's request;
+  this README record does not meet the unit's in-code acknowledgement requirement.
+- External sources, including the Devicon logo glyph, Apple material and map embed, are listed
+  in `docs/references.md`. Their in-code source comments were also removed.

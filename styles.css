@@ -1,36 +1,11 @@
-/* Generative AI acknowledgement (unit requirement):
-   Some parts of this stylesheet were generated or adapted using Claude (Anthropic, Claude Opus 5.5, October 2026).
-   Claude suggested the colour palette, the section structure and the media query breakpoints.
-   All AI-generated code was reviewed, edited and tested by the author before use.
-   Prompt used (translated from Vietnamese): "Complete Applied Web Project Part 1 for me. Our company is Apple.
-   Meet every requirement of the brief at the highest marking level, and only use the HTML and CSS taught in the unit." */
-
-/* Contents of this file
-   1. Base styles (whole page, text, links, images)
-   2. Header and navigation (all pages)
-   3. Shared building blocks (sections, buttons, notes, tables)
-   4. Footer (all pages)
-   5. Home page (index.html)
-   6. Jobs page (jobs.html)
-   7. Apply page (apply.html)
-   8. About page (about.html)
-   9. Responsive layout (media queries)
-   10. Print styles */
 
 
-/* ==========================================================
-   1. BASE STYLES
-   ========================================================== */
 
-/* box-sizing: border-box (CSS3, Lecture 6) makes width include padding and border,
-   so a box set to 25% stays 25% wide after we add padding. */
+
 * {
   box-sizing: border-box;
 }
 
-/* Sans-serif fonts are easier to read on screen (Week 4 Usability notes).
-   The list ends with the generic family "sans-serif" to avoid a validator warning.
-   font-size in em lets users enlarge text in their browser (Week 6 accessibility). */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -40,7 +15,6 @@ body {
   background-color: #ffffff;
 }
 
-/* Headings are grouped because they share the same colour and spacing. */
 h1, h2, h3, h4 {
   color: #1d1d1f;
   line-height: 1.25;
@@ -64,8 +38,6 @@ h4 {
   font-size: 1.05em;
 }
 
-/* Links stay underlined so they are not identified by colour alone (Week 6).
-   #0066cc on white has a high contrast and matches Apple's link colour. */
 a {
   color: #0066cc;
 }
@@ -79,11 +51,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Keyboard users must be able to see where they are on the page.
-   Week 6 accessibility guideline: "show where focus is" by adding a border or outline to focused elements.
-   outline takes the same width, style and colour values as the border shorthand (Lecture 6).
-   :focus is the pseudo-class taught in Lecture 4 for form elements; here it is also used for links and buttons.
-   The dark blue stands out clearly on the white and light grey backgrounds. */
 a:focus,
 input:focus,
 select:focus,
@@ -92,18 +59,15 @@ button:focus {
   outline: 3px solid #0058b0;
 }
 
-/* On the dark header bar a dark outline would be invisible, so links there use a light orange outline. */
 #site-header a:focus {
   outline: 3px solid #ff9f0a;
 }
 
-/* Flexible images: never wider than their container (Week 5 responsive design). */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Wrapper that centres the content and keeps lines at a comfortable reading width. */
 .container {
   width: 90%;
   max-width: 1080px;
@@ -112,18 +76,13 @@ img {
 }
 
 
-/* ==========================================================
-   2. HEADER AND NAVIGATION (all pages)
-   ========================================================== */
 
-/* Dark global bar, similar to the navigation bar on apple.com. */
 #site-header {
   background-color: #1d1d1f;
   color: #f5f5f7;
   padding: 0.6em 0;
 }
 
-/* Flexbox puts the logo on the left and the menu on the right (Week 5 layout). */
 #site-header .container {
   display: flex;
   justify-content: space-between;
@@ -140,7 +99,6 @@ img {
   font-weight: bold;
 }
 
-/* The logo image is black, so it sits on a light rounded tile inside the dark bar. */
 .brand img {
   background-color: #f5f5f7;
   border-radius: 10px;
@@ -152,7 +110,6 @@ img {
   color: #f5f5f7;
 }
 
-/* Horizontal menu built from an unordered list (Week 4 navigation example). */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -175,25 +132,18 @@ nav a:visited {
   color: #f5f5f7;
 }
 
-/* Underline on mouse over, as recommended in the Week 4 usability notes. */
 nav a:hover {
   color: #ffffff;
   border-bottom-color: #a1a1a6;
 }
 
-/* Class "current" marks the page the user is on, so the menu shows their location. */
 nav a.current {
   border-bottom-color: #2997ff;
   font-weight: bold;
 }
 
 
-/* ==========================================================
-   3. SHARED BUILDING BLOCKS
-   ========================================================== */
 
-/* Notice under the header on every page so nobody mistakes this student site for Apple's real careers site
-   (Week 6 web ethics: transparency, do not mislead users). */
 .project-banner {
   margin: 0;
   padding: 0.5em 0;
@@ -208,25 +158,20 @@ main {
   padding-bottom: 2em;
 }
 
-/* Every content section is separated by a thin line. */
 main section {
   margin-bottom: 2.5em;
 }
 
-/* Child combinator (Lecture 4): only the top-level sections inside .container get the divider. */
 main > .container > section {
   padding-bottom: 2em;
   border-bottom: 1px solid #d2d2d7;
 }
 
-/* Adjacent sibling combinator (Lecture 4): the first paragraph after an h1 is an introduction. */
 h1 + p {
   font-size: 1.2em;
   color: #424245;
 }
 
-/* Pill-shaped call to action links, in Apple's blue.
-   White text on the blue background gives high contrast between text and background (Week 6 guideline). */
 .button {
   display: inline-block;
   padding: 0.6em 1.4em;
@@ -247,7 +192,6 @@ h1 + p {
   color: #ffffff;
 }
 
-/* A second style of button with an outline instead of a fill. */
 .button.secondary {
   background-color: #ffffff;
   color: #0066cc;
@@ -258,7 +202,6 @@ h1 + p {
   background-color: #e8f2fd;
 }
 
-/* Grey information box. A border is added so the box is not shown by colour alone. */
 .note {
   background-color: #f5f5f7;
   border-left: 4px solid #86868b;
@@ -266,7 +209,6 @@ h1 + p {
   font-size: 0.95em;
 }
 
-/* Reference numbers are shown in a monospace font so each character is easy to read. */
 .ref {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
@@ -274,13 +216,10 @@ h1 + p {
   padding: 0.1em 0.4em;
 }
 
-/* Wide tables scroll sideways inside this box on small screens
-   instead of making the whole page scroll (Lecture 5 responsive tables: overflow-x: auto). */
 .table-wrapper {
   overflow-x: auto;
 }
 
-/* Basic table styling shared by the home page table. */
 table {
   width: 100%;
   margin-top: 1em;
@@ -308,8 +247,6 @@ tbody th {
   background-color: #f5f5f7;
 }
 
-/* Placeholder text that the group still has to replace before submission.
-   It is highlighted AND written in square brackets, so it is not shown by colour alone. */
 .placeholder {
   background-color: #fff3c4;
   border: 1px dashed #b07d00;
@@ -317,9 +254,6 @@ tbody th {
 }
 
 
-/* ==========================================================
-   4. FOOTER (all pages)
-   ========================================================== */
 
 #site-footer {
   background-color: #f5f5f7;
@@ -334,7 +268,6 @@ tbody th {
   margin-bottom: 0.4em;
 }
 
-/* Three footer columns side by side using Flexbox. */
 .footer-columns {
   display: flex;
   flex-wrap: wrap;
@@ -356,7 +289,6 @@ tbody th {
   margin-bottom: 0.3em;
 }
 
-/* The disclaimer and copyright line sit under the columns. */
 .disclaimer {
   border-top: 1px solid #d2d2d7;
   padding-top: 1em;
@@ -364,15 +296,7 @@ tbody th {
 }
 
 
-/* ==========================================================
-   5. HOME PAGE (index.html)
-   ========================================================== */
 
-/* Background graphic using CSS (index.html requirement).
-   Image generated using Claude (Anthropic, Claude Opus 5.5, October 2026): an HTML/CSS drawing of soft colour
-   shapes rendered to JPEG (images/bg-hero.jpg). Reviewed and edited before use.
-   A background colour is set as well, so the text stays readable if the image does not load
-   (Lecture 6: "For good usability include a background-color with -image"). */
 #hero {
   background-color: #fbfbfd;
   background-image: url("images/bg-hero.jpg");
@@ -383,7 +307,6 @@ tbody th {
   border-bottom: 1px solid #d2d2d7;
 }
 
-/* Text on the left, illustration on the right. */
 #hero .container {
   display: flex;
   align-items: center;
@@ -411,7 +334,6 @@ tbody th {
   margin-top: 0;
 }
 
-/* Search box with a button: the field grows and the button stays beside it. */
 .search-row {
   display: flex;
   flex-wrap: wrap;
@@ -447,12 +369,10 @@ tbody th {
   background-color: #0058b0;
 }
 
-/* Hiring process table: :nth-child(even) shades every second row (Lab 5 uses :nth-child). */
 #process tbody tr:nth-child(even) td {
   background-color: #fbfbfd;
 }
 
-/* The Acknowledgement of Country section is framed so it stands out from the job content. */
 #acknowledgement {
   background-color: #f5f5f7;
   border: 1px solid #d2d2d7;
@@ -461,11 +381,7 @@ tbody th {
 }
 
 
-/* ==========================================================
-   6. JOBS PAGE (jobs.html)
-   ========================================================== */
 
-/* Required: <aside> floated right, 25% width, with margin, padding and border. */
 aside {
   float: right;
   width: 25%;
@@ -484,7 +400,6 @@ aside ul {
   padding-left: 1.2em;
 }
 
-/* Each job is a card. overflow: hidden keeps the card's border around the floated aside area tidy. */
 .job {
   border: 1px solid #d2d2d7;
   border-radius: 18px;
@@ -493,8 +408,6 @@ aside ul {
   overflow: hidden;
 }
 
-/* Key facts about the job: description list with the term and value on one line
-   (Lecture 2: "Use CSS to style on one line"). */
 .job-facts {
   background-color: #f5f5f7;
   padding: 0.8em 1em;
@@ -513,7 +426,6 @@ aside ul {
   margin-bottom: 0.3em;
 }
 
-/* Ordered list of essential requirements uses numbers; the preferable list uses squares. */
 .job ol {
   list-style-type: decimal;
 }
@@ -526,8 +438,6 @@ aside ul {
   margin-bottom: 0.3em;
 }
 
-/* Embedded Google Map: full width of the content area so it shrinks on phones (Week 5 responsive design).
-   A border replaces the browser's default inset frame border. */
 .map-frame iframe {
   width: 100%;
   height: 360px;
@@ -535,25 +445,18 @@ aside ul {
   border-radius: 18px;
 }
 
-/* Clears the float so the footer always starts below the aside. */
 .clear {
   clear: both;
 }
 
 
-/* ==========================================================
-   7. APPLY PAGE (apply.html)
-   ========================================================== */
 
-/* Required: form layout using Flexbox or Grid.
-   Grid places the fields in two equal columns (Week 5 layout example: repeat(2, 1fr)). */
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em 1.5em;
 }
 
-/* A field that should use the full width of the grid, such as the street address. */
 .form-grid .wide {
   grid-column: 1 / 3;
 }
@@ -571,7 +474,6 @@ legend {
   padding: 0 0.4em;
 }
 
-/* Labels sit above their inputs so long labels never squash the field. */
 .field label {
   display: block;
   font-weight: bold;
@@ -585,7 +487,6 @@ legend {
   font-weight: normal;
 }
 
-/* Grouped selector for every text-style control so they all look the same. */
 .field input,
 .field select,
 textarea {
@@ -598,7 +499,6 @@ textarea {
   background-color: #ffffff;
 }
 
-/* Radio buttons and check boxes are laid out in a wrapping row with Flexbox. */
 .choices {
   display: flex;
   flex-wrap: wrap;
@@ -610,19 +510,15 @@ textarea {
   font-weight: normal;
 }
 
-/* Radio buttons and check boxes keep their normal size: this rule comes after ".field input"
-   and has the same specificity, so it wins the cascade and undoes the 100% width. */
 .choices input {
   width: auto;
   margin-right: 0.4em;
 }
 
-/* The gender group sits in a half-width grid cell, so two options per row fit better. */
 .field .choices label {
   width: 50%;
 }
 
-/* Nested fieldset (gender) has no second border, only its legend. */
 .field fieldset {
   border: none;
   padding: 0;
@@ -661,11 +557,7 @@ textarea {
 }
 
 
-/* ==========================================================
-   8. ABOUT PAGE (about.html)
-   ========================================================== */
 
-/* Required: styled student IDs. */
 .student-id {
   display: inline-block;
   font-family: "Courier New", Courier, monospace;
@@ -678,12 +570,10 @@ textarea {
   margin-left: 0.4em;
 }
 
-/* Nested list of group and class details. */
 #group-details ul ul {
   list-style-type: circle;
 }
 
-/* Members, contributions and quotes as a definition list. */
 .members dt {
   font-size: 1.2em;
   font-weight: bold;
@@ -692,7 +582,6 @@ textarea {
   border-top: 1px solid #d2d2d7;
 }
 
-/* The first member does not need a dividing line above it (:first-child, Lab 5). */
 .members dt:first-child {
   border-top: none;
 }
@@ -702,15 +591,12 @@ textarea {
   margin-bottom: 0.4em;
 }
 
-/* Quotes get a coloured bar and quotation marks so they read as quotations.
-   Italics are avoided because the Week 6 guideline says they are harder to read for people with dyslexia. */
 .members dd.quote {
   font-weight: bold;
   border-left: 4px solid #0071e3;
   padding-left: 0.8em;
 }
 
-/* Required: bordered figure. */
 #group-photo {
   border: 4px solid #1d1d1f;
   border-radius: 18px;
@@ -731,7 +617,6 @@ textarea {
   color: #424245;
 }
 
-/* Required: fun facts table styled with hex colours and a hover effect. */
 #fun-facts table {
   border: 2px solid #1d1d1f;
 }
@@ -749,19 +634,13 @@ textarea {
   background-color: #f5f5f7;
 }
 
-/* Hover effect: the row under the mouse pointer is highlighted. */
 #fun-facts tbody tr:hover td {
   background-color: #d6e9ff;
   color: #1d1d1f;
 }
 
 
-/* ==========================================================
-   9. RESPONSIVE LAYOUT (Week 5: viewport meta tag + media queries)
-   ========================================================== */
 
-/* Tablets and small laptops: the hero image gets a little less room than the text.
-   The jobs aside keeps its required 25% width while it is floated. */
 @media screen and (max-width: 1024px) {
   .hero-text {
     width: 55%;
@@ -772,7 +651,6 @@ textarea {
   }
 }
 
-/* Phones and narrow windows: everything stacks in one column. */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 1.9em;
@@ -810,7 +688,6 @@ textarea {
     margin-bottom: 0.6em;
   }
 
-  /* On a phone a 25% aside would be too narrow to read, so it stops floating. */
   aside {
     float: none;
     width: 100%;
@@ -847,7 +724,6 @@ textarea {
   }
 }
 
-/* Very small phones. */
 @media screen and (max-width: 480px) {
   .container {
     width: 94%;
@@ -863,11 +739,7 @@ textarea {
 }
 
 
-/* ==========================================================
-   10. PRINT STYLES (Lecture 6 @media print example)
-   ========================================================== */
 
-/* When a job ad is printed, the menu and search box are hidden and the text is black on white. */
 @media print {
   nav,
   #search,

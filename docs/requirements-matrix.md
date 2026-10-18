@@ -15,7 +15,7 @@ and how to check it.
 | Accessibility standards | labels, `alt`, heading order, `lang`, focus outline, contrast, `aria-labelledby` (Week 6) | Met |
 | Aboriginal and Torres Strait Islander element, explained | `index.html` `#acknowledgement` | Met |
 | Jira with epics, stories, tasks, two sprints | Jira board (`docs/jira-backlog.csv` is the import list) | Group to confirm (B-08) |
-| Deployed on GitHub Pages | footer link | Repository owner to confirm (B-09) |
+| Deployed on GitHub Pages | footer link | Not met on 18 October 2026: repository private and Pages disabled (B-09) |
 
 ## index.html
 
@@ -83,9 +83,9 @@ and how to check it.
 | Requirement | Where |
 |---|---|
 | External stylesheet `styles.css` | linked from every page |
-| At least one embedded CSS example on every page | `<style>` in each `<head>`, with a comment saying why |
-| At least one inline CSS example on every page | one `style="..."` per page, with a comment saying why |
-| Clear comments | header comment in the unit's format, section headings and a comment on every non-obvious rule |
+| At least one embedded CSS example on every page | `<style>` in each `<head>` |
+| At least one inline CSS example on every page | one `style="..."` per page |
+| Clear comments | Not met: code comments were removed on 18 October 2026 at the coordinator's request; see `docs/release-checklist.md` B-11 and B-12 |
 | Wide range of selectors | universal `*`, element, class, id, `element.class`, descendant, child `>`, adjacent `+`, grouping, attribute `[type="submit"]`, `:hover`, `:visited`, `:focus`, `:first-child`, `:nth-child(even)` |
 | Responsive layout | viewport meta tag + `@media` at 1024, 768 and 480 px; `max-width: 100%` images; `%` widths |
 | Accessibility best practices | visible focus outline, underlined links, high-contrast colours, `em` font sizes, `line-height: 1.6`, no colour-only cues |

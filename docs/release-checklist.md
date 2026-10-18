@@ -1,8 +1,7 @@
 # Release checklist
 
 COS10026 Applied Web Project - Part 1, Group 3. Work through this list before the ZIP is uploaded
-to Canvas. Code-side items are done; the open items need information or actions that only the
-group or the tutor can provide.
+to Canvas. The open items include missing group details, code attribution and publication.
 
 ## 1. Open items (group to do)
 
@@ -16,8 +15,10 @@ group or the tutor can provide.
 | B-06 | Real group photo (not individual photos), JPEG under 300 KB, saved as `images/group-photo.jpg` | `images/` | Group |
 | B-07 | Delete the "Before submission" box at the top of `about.html` once B-01 to B-06 are done | `about.html` | Group |
 | B-08 | Jira board has epics, user stories, tasks and at least two sprints, and the tutor has access | Jira | Group |
-| ~~B-09~~ | ~~GitHub Pages switched on~~ **Done 07/10/2026:** repository public, Pages served from `main` `/` | GitHub settings | - |
+| B-09 | Restore GitHub Pages: on 18 October 2026 the repository was private, Pages was disabled and the live URL returned 404 | GitHub repository visibility and Pages settings | Repository owner |
 | B-10 | Group Agreement submitted on Canvas by every member | Canvas | Each member |
+| B-11 | Unit-required GenAI acknowledgements and prompts are absent from code comments after the 18 October removal | Four HTML pages and `styles.css`; use recorded in `README.md` | Group |
+| B-12 | Unit-required external source acknowledgements are absent from code comments after the 18 October removal | Four HTML pages and `styles.css`; sources in `docs/references.md` | Group |
 
 Check that nothing is left:
 
@@ -37,8 +38,6 @@ must print nothing.
 | Responsive, no horizontal page scroll | `docs/test-report.md` section 2 |
 | Form validation and POST to `formtest.php` | `docs/test-report.md` section 3 |
 | Aboriginal and Torres Strait Islander element with explanation | `index.html` `#acknowledgement` |
-| GenAI acknowledgement with prompt in every file | top comment of each page and of `styles.css` |
-| External sources acknowledged | `docs/references.md`, comments above the logo |
 
 ## 3. After the open items are done
 

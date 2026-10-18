@@ -3,16 +3,17 @@
 COS10026 Applied Web Project - Part 1, Group 3. Referencing style: APA 7 where applicable.
 
 The unit requires every external source to be acknowledged in a code comment next to the code
-that uses it (Canvas: *Unit Requirement: External Source Acknowledgment*). This file is the
-consolidated list the same page suggests keeping in the README or project docs.
+that uses it (Canvas: *Unit Requirement: External Source Acknowledgment*). Those comments were
+removed on 18 October 2026 at the coordinator's request. This file preserves the source list,
+but does not meet the unit's in-code acknowledgement requirement.
 
 ## Images
 
-| File | Origin | Licence / note | Where acknowledged |
+| File | Origin | Licence / note | Current record |
 |---|---|---|---|
-| `images/logo.png` | Apple logo glyph adapted from the Devicon `apple-original` icon (https://devicon.dev/), exported to a 48 x 48 PNG | Devicon is MIT licensed. Apple and the Apple logo are trademarks of Apple Inc.; used only to identify the company in an educational project, with a disclaimer on every page | Comment above the `<img>` in the header of every page |
-| `images/hero-workplace.jpg` | Generated: Claude (Anthropic, Claude Opus 5.5, October 2026) wrote an HTML/CSS drawing that was rendered to JPEG at 640 x 400 | Original; no third-party artwork | Comment above the hero `<figure>` in `index.html` |
-| `images/bg-hero.jpg` | Generated the same way (soft colour background, 1200 x 600) | Original | Comment above `#hero` in `styles.css` section 5 |
+| `images/logo.png` | Apple logo glyph adapted from the Devicon `apple-original` icon (https://devicon.dev/), exported to a 48 x 48 PNG | Devicon is MIT licensed. Apple and the Apple logo are trademarks of Apple Inc.; used only to identify the company in an educational project, with a disclaimer on every page | This file; used in the header of every page |
+| `images/hero-workplace.jpg` | Generated: Claude (Anthropic, Claude Opus 5.5, October 2026) wrote an HTML/CSS drawing that was rendered to JPEG at 640 x 400 | Original; no third-party artwork | This file; used in `index.html` |
+| `images/bg-hero.jpg` | Generated the same way (soft colour background, 1200 x 600) | Original | This file; used by `#hero` in `styles.css` |
 | `images/group-photo.jpg` | Placeholder image generated the same way | **Must be replaced** by the real group photo | `about.html` |
 
 No stock photos, product photos or images copied from apple.com are used (Week 6 web ethics:

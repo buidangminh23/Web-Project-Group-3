@@ -72,7 +72,7 @@ individual contributions.
 
 ## What the AI assistance covered
 
-For honesty, and consistent with the GenAI comments in each file: an AI assistant produced the initial
+For honesty, as also recorded in the README: an AI assistant produced the initial
 scaffold of all four pages, the stylesheet and this documentation set in a single
 session, before any member-specific content existed.
 
