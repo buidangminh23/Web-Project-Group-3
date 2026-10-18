@@ -6,7 +6,7 @@ COS10026 Web Technology Project
 A static recruitment website for **Apple** (the Apple Online Store web team in Sydney),
 built with HTML5 and CSS3 only. No JavaScript, no frameworks, no build step.
 
-- Planned live site (unavailable on 18 October 2026; repository private and Pages disabled): https://dangminh232006.github.io/Web-Project-Group-3/
+- Live site: https://dangminh232006.github.io/Web-Project-Group-3/
 - Repository: https://github.com/dangminh232006/Web-Project-Group-3
 - Jira board: https://cos10026-group3.atlassian.net/jira/software/projects/WWTP/summary
 

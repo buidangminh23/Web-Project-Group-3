@@ -1,7 +1,7 @@
 # Release checklist
 
 COS10026 Applied Web Project - Part 1, Group 3. Work through this list before the ZIP is uploaded
-to Canvas. The open items include missing group details, code attribution and publication.
+to Canvas. The open items include missing group details and code attribution.
 
 ## 1. Open items (group to do)
 
@@ -15,7 +15,7 @@ to Canvas. The open items include missing group details, code attribution and pu
 | B-06 | Real group photo (not individual photos), JPEG under 300 KB, saved as `images/group-photo.jpg` | `images/` | Group |
 | B-07 | Delete the "Before submission" box at the top of `about.html` once B-01 to B-06 are done | `about.html` | Group |
 | B-08 | Jira board has epics, user stories, tasks and at least two sprints, and the tutor has access | Jira | Group |
-| B-09 | Restore GitHub Pages: on 18 October 2026 the repository was private, Pages was disabled and the live URL returned 404 | GitHub repository visibility and Pages settings | Repository owner |
+| ~~B-09~~ | ~~Restore GitHub Pages~~ **Done 18/10/2026:** repository made public and Pages enabled from `main` `/`; live site verified | GitHub repository visibility and Pages settings | Repository owner |
 | B-10 | Group Agreement submitted on Canvas by every member | Canvas | Each member |
 | B-11 | Unit-required GenAI acknowledgements and prompts are absent from code comments after the 18 October removal | Four HTML pages and `styles.css`; use recorded in `README.md` | Group |
 | B-12 | Unit-required external source acknowledgements are absent from code comments after the 18 October removal | Four HTML pages and `styles.css`; sources in `docs/references.md` | Group |

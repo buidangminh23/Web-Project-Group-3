@@ -15,7 +15,7 @@ and how to check it.
 | Accessibility standards | labels, `alt`, heading order, `lang`, focus outline, contrast, `aria-labelledby` (Week 6) | Met |
 | Aboriginal and Torres Strait Islander element, explained | `index.html` `#acknowledgement` | Met |
 | Jira with epics, stories, tasks, two sprints | Jira board (`docs/jira-backlog.csv` is the import list) | Group to confirm (B-08) |
-| Deployed on GitHub Pages | footer link | Not met on 18 October 2026: repository private and Pages disabled (B-09) |
+| Deployed on GitHub Pages | footer link | Met: public repository, Pages enabled from `main` `/` (B-09) |
 
 ## index.html
 
