@@ -27,7 +27,7 @@ and how to check it.
 | Footer: Jira link, GitHub repository link, email link | `#site-footer` |
 | Table with cell merging | `#process` table: `rowspan="2"` on Stage/Step headings and on Apply/Interview, `colspan="2"` on "What to expect", `colspan="3"` in `tfoot` |
 | Search box with a button | `#search` form: `<input type="search">` + `<button type="submit">` |
-| Background graphic using CSS | `styles.css` section 5: `#hero { background-image: url("images/bg-hero.jpg"); }` |
+| Background graphic using CSS | `index.css`: `#hero { background-image: url("images/bg-hero.jpg"); }` |
 
 ## jobs.html
 
@@ -43,7 +43,7 @@ and how to check it.
 | Multiple `<section>` elements | 2 job sections, each with 3 nested sections |
 | One ordered list and one unordered list | `<ol>` essential, `<ul>` responsibilities and preferable |
 | At least one `<aside>` | "Life at Apple" |
-| `<aside>` floated right, 25% width, margin, padding, border | `styles.css` section 6 |
+| `<aside>` floated right, 25% width, margin, padding, border | `jobs.css` |
 
 ## apply.html
 
@@ -63,7 +63,7 @@ and how to check it.
 | Labels on all inputs | | `<label for>` or wrapping `<label>` on every control |
 | All fields except textarea required | | `required` on each (see `decisions.md` D-04) |
 | POST to formtest.php | | `method="post" action="https://mercury.swin.edu.au/it000000/formtest.php"` |
-| Form layout using Flexbox or Grid | | `.form-grid` (Grid) and `.choices` (Flexbox) in `styles.css` section 7 |
+| Form layout using Flexbox or Grid | | `.form-grid` (Grid) and `.choices` (Flexbox) in `apply.css` |
 
 ## about.html
 
@@ -82,7 +82,8 @@ and how to check it.
 
 | Requirement | Where |
 |---|---|
-| External stylesheet `styles.css` | linked from every page |
+| External stylesheet `styles.css` | linked from every page for shared responsive and accessible styling |
+| Page-specific external stylesheet | `index.css`, `jobs.css`, `apply.css`, or `about.css` linked from its matching page |
 | At least one embedded CSS example on every page | `<style>` in each `<head>` |
 | At least one inline CSS example on every page | one `style="..."` per page |
 | Clear comments | Not met: code comments were removed on 18 October 2026 at the coordinator's request; see `docs/release-checklist.md` B-11 and B-12 |

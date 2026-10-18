@@ -90,20 +90,19 @@ Two consequences worth planning for:
 1. **Page ownership must be real and visible in the Git history.** One person
    pushing everyone's work makes it look as though only one person worked. Each
    member should commit their own page under their own account.
-2. **The shared stylesheet is the collision risk.** `styles.css` is one file that
-   everyone needs. It is organised into 8 numbered sections precisely so each
-   member can work in their own page's section without touching anyone else's.
-   Agree who owns sections 1 to 3 (the shared base) before anyone starts.
+2. **Shared CSS changes affect all pages.** Each page has its own stylesheet,
+   while `styles.css` holds the common base, navigation, footer and responsive
+   rules. Agree who changes shared rules before editing `styles.css`.
 
 Suggested split for a group of four - **confirm with your own team, do not adopt
 this silently:**
 
-| Member | Page | Stylesheet sections |
+| Member | Page | Page stylesheet |
 |---|---|---|
-| 1 | `index.html` | 4 (Home) plus shared 1 to 3 with member 2 |
-| 2 | `jobs.html` | 5 (Jobs) plus shared 1 to 3 with member 1 |
-| 3 | `apply.html` | 6 (Apply) |
-| 4 | `about.html` | 7 (About) plus 8 (responsive) |
+| 1 | `index.html` | `index.css`; coordinate shared rules with member 2 |
+| 2 | `jobs.html` | `jobs.css`; coordinate shared rules with member 1 |
+| 3 | `apply.html` | `apply.css` |
+| 4 | `about.html` | `about.css` |
 
 For a group of three, member 4's work is usually split between members 1 and 3.
 
@@ -118,5 +117,5 @@ A workable convention, since the brief does not prescribe one:
 - Pull `main` before starting each session, to keep stylesheet conflicts small.
 - Never commit directly to `main` once more than one person is working.
 
-If two people do edit `styles.css` at once, the conflict is usually trivial
-because the sections are separate - resolve by keeping both blocks.
+If two people edit `styles.css` at once, review both changes and check all four
+pages after resolving the conflict.

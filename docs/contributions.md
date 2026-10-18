@@ -28,14 +28,13 @@ tutor.
 
 Fill this in and keep it current.
 
-| Page | Owner | Stylesheet section owned | Evidence (commit range or Jira issues) |
+| Page | Owner | Page stylesheet | Evidence (commit range or Jira issues) |
 |---|---|---|---|
-| `index.html` | Bui Dang Minh (105716425) | 5. Home page | |
-| `jobs.html` | | 6. Jobs page | |
-| `apply.html` | | 7. Apply page | |
-| `about.html` | | 8. About page | |
-| `styles.css` sections 1-4 (base, header and navigation, shared blocks, footer) | Bui Dang Minh (105716425) | | |
-| `styles.css` sections 9-10 (responsive and print) | Bui Dang Minh (105716425) | | |
+| `index.html` | Bui Dang Minh (105716425) | `index.css` | |
+| `jobs.html` | | `jobs.css` | |
+| `apply.html` | | `apply.css` | |
+| `about.html` | | `about.css` | |
+| `styles.css` (base, header, navigation, shared blocks, footer, responsive and print) | Bui Dang Minh (105716425) | Shared styles | |
 
 ---
 

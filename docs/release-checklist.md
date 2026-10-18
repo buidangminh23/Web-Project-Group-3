@@ -17,8 +17,8 @@ to Canvas. The open items include missing group details and code attribution.
 | B-08 | Jira board has epics, user stories, tasks and at least two sprints, and the tutor has access | Jira | Group |
 | ~~B-09~~ | ~~Restore GitHub Pages~~ **Done 18/10/2026:** repository made public and Pages enabled from `main` `/`; live site verified | GitHub repository visibility and Pages settings | Repository owner |
 | B-10 | Group Agreement submitted on Canvas by every member | Canvas | Each member |
-| B-11 | Unit-required GenAI acknowledgements and prompts are absent from code comments after the 18 October removal | Four HTML pages and `styles.css`; use recorded in `README.md` | Group |
-| B-12 | Unit-required external source acknowledgements are absent from code comments after the 18 October removal | Four HTML pages and `styles.css`; sources in `docs/references.md` | Group |
+| B-11 | Unit-required GenAI acknowledgements and prompts are absent from code comments after the 18 October removal | Four HTML pages and five CSS files; use recorded in `README.md` | Group |
+| B-12 | Unit-required external source acknowledgements are absent from code comments after the 18 October removal | Four HTML pages and five CSS files; sources in `docs/references.md` | Group |
 
 Check that nothing is left:
 
@@ -41,8 +41,8 @@ must print nothing.
 
 ## 3. After the open items are done
 
-1. Re-validate the changed pages at https://validator.w3.org/nu/ and `styles.css` at https://jigsaw.w3.org/css-validator/.
+1. Re-validate the changed pages at https://validator.w3.org/nu/ and all five CSS files at https://jigsaw.w3.org/css-validator/.
 2. Run the WAVE extension on each live page and fix anything red.
 3. Commit and push to `main`, wait about a minute, then open the live site and check every page and image.
-4. Make the ZIP from the same commit: the four pages, `styles.css`, `images/` (and `docs/` if wanted).
+4. Make the ZIP from the same commit: the four pages, all five CSS files, `images/` (and `docs/` if wanted).
 5. Upload the ZIP to Canvas and paste the live site and repository links in the submission.

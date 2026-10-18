@@ -13,7 +13,7 @@ but does not meet the unit's in-code acknowledgement requirement.
 |---|---|---|---|
 | `images/logo.png` | Apple logo glyph adapted from the Devicon `apple-original` icon (https://devicon.dev/), exported to a 48 x 48 PNG | Devicon is MIT licensed. Apple and the Apple logo are trademarks of Apple Inc.; used only to identify the company in an educational project, with a disclaimer on every page | This file; used in the header of every page |
 | `images/hero-workplace.jpg` | Generated: Claude (Anthropic, Claude Opus 5.5, October 2026) wrote an HTML/CSS drawing that was rendered to JPEG at 640 x 400 | Original; no third-party artwork | This file; used in `index.html` |
-| `images/bg-hero.jpg` | Generated the same way (soft colour background, 1200 x 600) | Original | This file; used by `#hero` in `styles.css` |
+| `images/bg-hero.jpg` | Generated the same way (soft colour background, 1200 x 600) | Original | This file; used by `#hero` in `index.css` |
 | `images/group-photo.jpg` | Placeholder image generated the same way | **Must be replaced** by the real group photo | `about.html` |
 
 No stock photos, product photos or images copied from apple.com are used (Week 6 web ethics:

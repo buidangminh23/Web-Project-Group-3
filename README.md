@@ -25,7 +25,8 @@ built with HTML5 and CSS3 only. No JavaScript, no frameworks, no build step.
 | `jobs.html` | Two job descriptions (`AFE26` Front-End Web Developer, `AUX26` Accessibility and UX Designer), each a `<section>` with salary, reporting line, responsibilities, essential (`<ol>`) and preferable (`<ul>`) requirements; `<aside>` floated right at 25%; embedded Google Map of Apple headquarters (Apple Park) |
 | `apply.html` | Job application form, `method="post"` to `https://mercury.swin.edu.au/it000000/formtest.php`, HTML5 validation with `pattern`, `maxlength`, `required`, `type="email"`; layout with CSS Grid |
 | `about.html` | Group name and class details (nested list), members, contributions and quotes (definition list), group photo in a bordered `<figure>`, fun facts table with hover effect |
-| `styles.css` | The single external stylesheet, including responsive media queries and print styles |
+| `styles.css` | Shared base, navigation, footer, responsive and print styles |
+| `index.css`, `jobs.css`, `apply.css`, `about.css` | CSS specific to each matching HTML page |
 
 Every page has the four meta tags taught in Week 1 (charset, description, keywords, author), the
 viewport meta tag (Week 5), the shared navigation and footer, one embedded `<style>` example and one
@@ -40,6 +41,10 @@ applied-web-project-part1/
 ├── apply.html
 ├── about.html
 ├── styles.css
+├── index.css
+├── jobs.css
+├── apply.css
+├── about.css
 ├── images/
 │   ├── logo.png             Apple logo glyph, 48 x 48 (see docs/references.md)
 │   ├── hero-workplace.jpg   Hero illustration, 640 x 400

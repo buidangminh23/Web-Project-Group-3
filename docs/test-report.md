@@ -12,6 +12,12 @@ COS10026 Applied Web Project - Part 1, Group 3. Tested on 07/10/2026 on macOS (G
 | `about.html` | W3C Nu HTML Checker | 0 errors, 0 warnings |
 | `styles.css` | W3C CSS Validator (https://jigsaw.w3.org/css-validator/), profile CSS level 3 + SVG | 0 errors |
 
+The validator results above are from 07/10/2026, before the CSS was split into
+five files. On 18/10/2026, all five files passed a local CSS syntax parse. A
+headless Chrome comparison of computed styles and element positions on all four
+pages at 320, 768 and 1280 px matched the pre-split version in all 12 cases.
+The new CSS files still need separate W3C CSS Validator checks before submission.
+
 At the strictest warning level the CSS validator lists informational warnings only: "no
 background-color set but you have set a color" (the background comes from a parent element) and
 "Redefinition of width" (the media queries deliberately change a value set earlier in the file).
