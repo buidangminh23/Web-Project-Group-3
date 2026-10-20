@@ -74,7 +74,13 @@
         </p>
       </section>
 
-      <form id="application" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+      <p id="submission-help" class="note">
+        The test results open in a new tab. Close that tab to return to this form with your answers unchanged.
+        The test server's Back button is currently unavailable.
+      </p>
+
+      <form id="application" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php"
+            target="_blank" rel="noopener" aria-describedby="submission-help">
 
         <fieldset>
           <legend>Job</legend>
@@ -95,7 +101,6 @@
           <div class="form-grid">
             <div class="field">
               <label for="first-name">First name <span class="required-star">*</span>
-                <span class="hint">Letters only, up to 20</span>
               </label>
               <input type="text" id="first-name" name="first_name" maxlength="20"
                      pattern="[A-Za-z]{1,20}" required title="Up to 20 letters (A to Z), no spaces or numbers">
@@ -103,7 +108,6 @@
 
             <div class="field">
               <label for="last-name">Last name <span class="required-star">*</span>
-                <span class="hint">Letters only, up to 20</span>
               </label>
               <input type="text" id="last-name" name="last_name" maxlength="20"
                      pattern="[A-Za-z]{1,20}" required title="Up to 20 letters (A to Z), no spaces or numbers">
@@ -118,7 +122,7 @@
                      title="Use the format dd/mm/yyyy, for example 15/06/1998">
             </div>
 
-            <div class="field">
+            <div class="field wide">
               <fieldset>
                 <legend>Gender <span class="required-star">*</span></legend>
                 <div class="choices">
@@ -135,7 +139,7 @@
         <fieldset>
           <legend>Address</legend>
           <div class="form-grid">
-            <div class="field wide">
+            <div class="field">
               <label for="street">Street address <span class="required-star">*</span>
                 <span class="hint">Up to 40 characters</span>
               </label>
@@ -150,17 +154,19 @@
             </div>
 
             <div class="field">
-              <label for="state">State <span class="required-star">*</span></label>
+              <label for="state">State or territory <span class="required-star">*</span>
+                <span class="hint">Select your Australian state or territory</span>
+              </label>
               <select id="state" name="state" required>
                 <option value="">Please select</option>
-                <option value="VIC">VIC</option>
-                <option value="NSW">NSW</option>
-                <option value="QLD">QLD</option>
-                <option value="NT">NT</option>
-                <option value="WA">WA</option>
-                <option value="SA">SA</option>
-                <option value="TAS">TAS</option>
-                <option value="ACT">ACT</option>
+                <option value="VIC">Victoria</option>
+                <option value="NSW">New South Wales</option>
+                <option value="QLD">Queensland</option>
+                <option value="NT">Northern Territory</option>
+                <option value="WA">Western Australia</option>
+                <option value="SA">South Australia</option>
+                <option value="TAS">Tasmania</option>
+                <option value="ACT">Australian Capital Territory</option>
               </select>
             </div>
 
@@ -238,7 +244,14 @@
           <h2 id="footer-contact">Contact</h2>
           <ul>
             <li>Email: <a href="mailto:info@apple-careers.example">info@apple-careers.example</a></li>
-            <li>Student contact: <a href="mailto:105716425@student.swin.edu.au">105716425@student.swin.edu.au</a></li>
+            <li>Student contacts:
+              <ul>
+                <li>Bui Dang Minh<br><a href="mailto:105716425@student.swin.edu.au">105716425@student.swin.edu.au</a></li>
+                <li>Le Ho Hoang Lan<br><a href="mailto:106229050@student.swin.edu.au">106229050@student.swin.edu.au</a></li>
+                <li>Nguyen Quang Thang<br><a href="mailto:106202475@student.swin.edu.au">106202475@student.swin.edu.au</a></li>
+                <li>Tran Vo Nhat Minh<br><a href="mailto:106233462@student.swin.edu.au">106233462@student.swin.edu.au</a></li>
+              </ul>
+            </li>
           </ul>
         </section>
         <section aria-labelledby="footer-site">
@@ -249,6 +262,16 @@
             <li><a href="apply.html">Apply</a></li>
             <li><a href="about.html">About us</a></li>
           </ul>
+        </section>
+        <section class="footer-map" aria-labelledby="footer-location">
+          <h2 id="footer-location">Apple headquarters</h2>
+          <iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sApple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014!6i15"
+                  title="Google Map showing Apple Park, Apple headquarters in Cupertino, California"
+                  width="600" height="240" loading="lazy"></iframe>
+          <p>Apple Park, One Apple Park Way, Cupertino, California 95014, United States.</p>
+          <p>Google may set cookies when the map loads.
+            <a href="https://www.google.com/maps/place/Apple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014">Open in Google Maps</a>.
+          </p>
         </section>
       </div>
       <p class="disclaimer">
