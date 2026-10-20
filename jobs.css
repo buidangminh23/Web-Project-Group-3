@@ -54,12 +54,6 @@ aside ul {
   margin-bottom: 0.3em;
 }
 
-.map-frame iframe {
-  width: 100%;
-  height: 360px;
-  border: 1px solid #d2d2d7;
-  border-radius: 18px;
-}
 
 .clear {
   clear: both;
@@ -83,9 +77,6 @@ aside ul {
     margin-left: 0;
   }
 
-  .map-frame iframe {
-    height: 280px;
-  }
 }
 
 @media print {
