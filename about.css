@@ -56,25 +56,3 @@
   padding-top: 0.6em;
   color: #424245;
 }
-
-#fun-facts table {
-  border: 2px solid #1d1d1f;
-}
-
-#fun-facts th {
-  background-color: #0071e3;
-  color: #ffffff;
-}
-
-#fun-facts td {
-  background-color: #ffffff;
-}
-
-#fun-facts tbody tr:nth-child(even) td {
-  background-color: #f5f5f7;
-}
-
-#fun-facts tbody tr:hover td {
-  background-color: #d6e9ff;
-  color: #1d1d1f;
-}
