@@ -25,7 +25,8 @@ only use content you have the right to use).
 |---|---|
 | Acknowledgement of Country wording and approach | Swinburne University of Technology. (n.d.). *Acknowledgement of Country* [Canvas page, COS10026 Web Technology Project]. |
 | Traditional Custodians of the Sydney CBD (Gadigal people of the Eora Nation) | City of Sydney. (n.d.). *Aboriginal and Torres Strait Islander* [Web page]. https://www.cityofsydney.nsw.gov.au/ |
-| Apple headquarters map (`jobs.html`) | Google. (n.d.). *Apple Park, One Apple Park Way, Cupertino, CA 95014* [Google Maps embed]. https://www.google.com/maps/place/Apple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014 |
+| Apple headquarters map (shared footer on all four pages) | Google. (n.d.). *Apple Park, One Apple Park Way, Cupertino, CA 95014* [Google Maps embed]. https://www.google.com/maps/place/Apple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014 |
+| Australian state and territory names | Treasury Corporation of Victoria. (n.d.). *State & Commonwealth Relationship*. https://www.tcv.vic.gov.au/about-tcv/victoria-s-economy/state-commonwealth-relationship |
 | Company background (products, Apple Online Store) | Apple Inc. (n.d.). *Apple*. https://www.apple.com/au/ |
 | Dark patterns avoided in the form | Swinburne University of Technology. (n.d.). *Week 06: Dark patterns examples in web development* [Canvas page]. |
 | Form regular expressions | Swinburne University of Technology. (n.d.). *Lecture 3: HTML Forms and Structural Elements* [Lecture slides]. |

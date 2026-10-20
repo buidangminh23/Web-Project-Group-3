@@ -7,11 +7,11 @@ to Canvas. The open items include missing group details and code attribution.
 
 | # | Item | Where | Who |
 |---|---|---|---|
-| B-01 | Class day, class time and tutor name | `about.html` `#group-details` | Group |
+| ~~B-01~~ | **Done 20/10/2026:** Wednesday, 09:00 to 12:00, Thomas Harrison (confirmed by the coordinator) | `about.html` `#group-details` | Group |
 | ~~B-02~~ | ~~Name and student ID of members 2 to 4~~ **Done 07/10/2026:** Le Ho Hoang Lan (106229050), Nguyen Quang Thang (106202475), Tran Vo Nhat Minh (106233462) | `about.html` | - |
 | B-03 | Page owned and other work for members 2 to 4 (each student must build at least one page and its CSS) | `about.html`, `docs/contributions.md` | Each member |
 | B-04 | Quote in each member's first language plus English translation; add `lang="xx"` on the quote's `<span>` | `about.html` `dd.quote` | Each member |
-| B-05 | Fun facts for members 2 to 4 | `about.html` `#fun-facts` | Each member |
+| B-05 | Fun facts section removed at the coordinator's request on 20/10/2026; brief requirement remains unmet | `about.html` | Group |
 | B-06 | Real group photo (not individual photos), JPEG under 300 KB, saved as `images/group-photo.jpg` | `images/` | Group |
 | B-07 | Delete the "Before submission" box at the top of `about.html` once B-01 to B-06 are done | `about.html` | Group |
 | B-08 | Jira board has epics, user stories, tasks and at least two sprints, and the tutor has access | Jira | Group |

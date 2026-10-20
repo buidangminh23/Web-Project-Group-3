@@ -43,7 +43,7 @@ At 320 and 375 px the two tables are wider than the screen; they scroll sideways
 | `jobs.html` aside | `float: right; width: 25%` with margin, padding and border | stops floating, full width |
 | Home hero | text and image side by side (Flexbox) | stacked |
 | Application form | two-column Grid | one column |
-| Footer | three columns (Flexbox) | one column |
+| Footer (updated 20/10/2026) | four columns (Grid); two at 1024 px and below | two columns; one at 480 px and below |
 
 ## 3. Application form
 
@@ -104,3 +104,17 @@ map renders in Chrome at desktop and phone widths.
 
 - Screen readers (VoiceOver) and browsers other than Chrome.
 - The WAVE extension report: run it on the live site before submission and fix anything red.
+
+## 6. Form and footer regression checks (20/10/2026)
+
+- W3C Nu HTML Checker: all four updated pages returned zero messages (0 errors, 0 warnings). All four also passed a strict local HTML5 parse; all five CSS files passed a local syntax parse.
+
+- Chrome through the connected browser extension: all four pages at 320, 375, 768, 1024 and 1280 CSS px had no horizontal page overflow (20/20 cases). Every case contained four student email links and one map in the footer. The map rendered beside Pages on desktop.
+- First/last name, street/suburb, state/postcode and email/phone pairs share top coordinates on desktop; text inputs and the select measure 48 px high. Radio padding is 0 px. The form stacks below 768 px.
+- State and territory labels show full Australian names. All eight submitted abbreviations and native validation attributes remain unchanged.
+- Submitted made-up values in Chrome to Mercury. A separate result tab displayed all 13 field names, including `state=ACT`. Closing it left the original form populated with `Test`, `ACT` and `Test only`; Clear form reset the fields and selections.
+- Mercury's own Back button remains unavailable: its referenced `https://mercury.swin.edu.au/it000000/formutil.js` returned HTTP 404. The HTML-only new-tab behaviour avoids relying on it and is explained before the form.
+
+- About page update: removed the Fun facts section and empty quote/translation placeholders at the coordinator's request. Class details are Wednesday, 09:00 to 12:00, tutor Thomas Harrison, as confirmed by the coordinator.
+
+- About now includes a Selected project brief section describing the chosen Apple recruitment site, both advertised roles, the four pages and the HTML5/CSS3-only Part 1 scope.

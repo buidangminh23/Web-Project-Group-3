@@ -54,7 +54,7 @@ and how to check it.
 | Date of birth | dd/mm/yyyy | text input, `pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}"` |
 | Gender | radio buttons in fieldset + legend | nested `<fieldset>` with `<legend>Gender</legend>` |
 | Street address / Suburb | max 40 characters | `maxlength="40"` |
-| State | dropdown of 8 states | `<select>` VIC, NSW, QLD, NT, WA, SA, TAS, ACT with empty first option |
+| State | dropdown of 8 states | `<select>` with full state/territory names, submitted values VIC, NSW, QLD, NT, WA, SA, TAS, ACT and an empty first option |
 | Postcode | exactly 4 digits | `pattern="[0-9]{4}"` |
 | Email | valid format | `type="email"` |
 | Phone | 8 to 12 digits | `type="tel"`, `pattern="[0-9]{8,12}"` |
@@ -69,14 +69,14 @@ and how to check it.
 
 | Requirement | Where |
 |---|---|
-| Group name and class day/time, nested list | `#group-details` (placeholders for day/time, B-01) |
+| Group name and class day/time, nested list | `#group-details`: Wednesday, 09:00 to 12:00, tutor Thomas Harrison |
 | Member contributions and quotes, definition list | `dl.members` |
 | Quote in first language + English translation | `dd.quote` with `lang="vi"` for Bui Dang Minh (others B-04) |
 | Group photo under 300 KB in `<figure>` with caption | `#group-photo` (placeholder image, B-06) |
-| Fun facts table with caption | `#fun-facts` |
+| Fun facts table with caption | Removed at the coordinator's request on 20/10/2026; requirement not met |
 | Styled student IDs | `.student-id` |
 | Bordered figure | `#group-photo { border: 4px solid #1d1d1f; }` |
-| Table styled with hex colours and hover | `#fun-facts th`, `#fun-facts tbody tr:hover td` |
+| Table styled with hex colours and hover | About-page table removed at the coordinator's request on 20/10/2026; requirement not met |
 
 ## CSS
 
