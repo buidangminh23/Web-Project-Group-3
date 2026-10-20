@@ -1,6 +1,6 @@
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1em 1.5em;
 }
 
@@ -21,10 +21,20 @@ legend {
   padding: 0 0.4em;
 }
 
+.field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.field > label {
+  min-height: 3.5em;
+  margin-bottom: 0.5em;
+}
+
 .field label {
   display: block;
   font-weight: bold;
-  margin-bottom: 0.3em;
 }
 
 .hint {
@@ -34,11 +44,13 @@ legend {
   font-weight: normal;
 }
 
-.field input,
-.field select,
-textarea {
+.field > input,
+.field > select,
+.field > textarea {
   width: 100%;
   padding: 0.6em 0.7em;
+  min-height: 3em;
+  line-height: 1.6;
   font-size: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #86868b;
@@ -49,27 +61,35 @@ textarea {
 .choices {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1em;
 }
 
 .choices label {
-  width: 33%;
-  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  width: 33.333%;
+  min-height: 3em;
+  padding-right: 1em;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
 .choices input {
+  flex: none;
   width: auto;
+  margin: 0;
   margin-right: 0.4em;
 }
 
 .field .choices label {
-  width: 50%;
+  width: 25%;
 }
 
 .field fieldset {
   border: none;
   padding: 0;
   margin: 0;
+  min-width: 0;
 }
 
 .field fieldset legend {
@@ -78,9 +98,16 @@ textarea {
   margin-bottom: 0.3em;
 }
 
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
 .form-buttons input {
   padding: 0.7em 1.6em;
-  margin-right: 0.8em;
+  margin: 0;
   font-size: 1em;
   font-weight: bold;
   border-radius: 980px;
@@ -114,14 +141,20 @@ textarea {
     grid-column: 1;
   }
 
-  .choices label {
+  .field > label {
+    min-height: 0;
+  }
+
+  .choices label,
+  .field .choices label {
     width: 50%;
   }
 
 }
 
 @media screen and (max-width: 480px) {
-  .choices label {
+  .choices label,
+  .field .choices label {
     width: 100%;
   }
 }
