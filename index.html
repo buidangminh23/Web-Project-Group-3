@@ -8,8 +8,7 @@
   <meta name="author" content="Bui Dang Minh (105716425), Group 3">
   <title>Careers at Apple - Home</title>
 
-
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261023">
   <link rel="stylesheet" href="index.css">
 
   <style>
@@ -25,9 +24,13 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header id="site-header">
     <div class="container">
       <a class="brand" href="index.html">
+
+        <!-- Logo glyph adapted from Devicon apple-original, https://devicon.dev/ (MIT); Apple trademark, educational use. -->
         <img src="images/logo.png" alt="Apple logo" width="48" height="48">
         Apple Careers
       </a>
@@ -47,9 +50,14 @@
     <strong>Student project for COS10026 at Swinburne.</strong> This is not an official Apple website and all jobs are fictional.
   </p>
 
+  <!-- GenAI acknowledgement: Claude and Codex.
+       Use: assistance with the final code review; outputs were reviewed and adapted.
+       Prompt (translated and summarised): Review the final HTML and CSS code against the assignment brief and suggest improvements. -->
+  <!-- Company background: Apple Inc., Apple (Australia), https://www.apple.com/au/; wording adapted for fictional coursework roles. -->
   <section id="hero" aria-labelledby="company-name">
     <div class="container">
       <div class="hero-text">
+
         <h1 id="company-name">Apple</h1>
         <p class="slogan">Think different.</p>
         <p>
@@ -58,6 +66,7 @@
           <strong>Apple Online Store</strong>, so every page has to be fast, clear and
           usable by everyone.
         </p>
+
         <p style="color: #424245;">
           Our Sydney web team is growing. We are looking for people who care about
           accessible design and well-built websites to help us shape the store experience
@@ -69,6 +78,7 @@
         </p>
       </div>
 
+      <!-- Original AI-assisted artwork; acknowledgement: index.html. -->
       <figure class="hero-figure">
         <img src="images/hero-workplace.jpg"
              alt="Illustration of a laptop showing an Apple Careers web page next to a phone showing an application form"
@@ -77,7 +87,7 @@
     </div>
   </section>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <div class="container">
 
       <section id="search" aria-labelledby="search-heading">
@@ -170,8 +180,10 @@
         </div>
       </section>
 
+      <!-- Wording follows Swinburne COS10026 Canvas, Acknowledgement of Country; Sydney custodians: City of Sydney, Aboriginal and Torres Strait Islander, https://www.cityofsydney.nsw.gov.au/ -->
       <section id="acknowledgement" aria-labelledby="ack-heading">
         <h2 id="ack-heading">Acknowledgement of Country</h2>
+
         <p>
           We acknowledge the <strong>Gadigal people of the Eora Nation</strong>, the Traditional Custodians
           of the land in Sydney where the roles on this site are based, and pay our respects to their
@@ -234,8 +246,10 @@
             <li><a href="about.html">About us</a></li>
           </ul>
         </section>
+
         <section class="footer-map" aria-labelledby="footer-location">
           <h2 id="footer-location">Apple headquarters</h2>
+          <!-- Map supplied by Google Maps: Apple Park, Cupertino; https://www.google.com/maps/place/Apple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014 -->
           <iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sApple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014!6i15"
                   title="Google Map showing Apple Park, Apple headquarters in Cupertino, California"
                   width="600" height="240" loading="lazy"></iframe>

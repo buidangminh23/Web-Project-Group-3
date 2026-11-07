@@ -1,7 +1,8 @@
 # Requirements matrix
 
 COS10026 Applied Web Project - Part 1, Group 3. Every requirement of the brief, where it is met,
-and how to check it.
+and how to check it. Status reviewed 23 October 2026; remaining work is tracked in
+`release-checklist.md`.
 
 ## General
 
@@ -12,9 +13,9 @@ and how to check it.
 | Common navigation menu on all pages | `<nav>` in each `<header>` | Met (identical four links, current page marked) |
 | Validates as HTML5 | `docs/test-report.md` | Met, 0 errors |
 | Semantic tags | `header`, `nav`, `main`, `section`, `aside`, `figure`, `figcaption`, `footer` | Met |
-| Accessibility standards | labels, `alt`, heading order, `lang`, focus outline, contrast, `aria-labelledby` (Week 6) | Met |
+| Accessibility checks | labels, `alt`, heading order, `lang`, focus outline, contrast, `aria-labelledby` (Week 6) | WAVE screenshots: 0 errors and 0 contrast errors on all four pages; published skip links and keyboard control checks passed; changed-page responsive checks are recorded in test-report.md section 9; a screen-reader walkthrough remains incomplete |
 | Aboriginal and Torres Strait Islander element, explained | `index.html` `#acknowledgement` | Met |
-| Jira with epics, stories, tasks, two sprints | Jira board (`docs/jira-backlog.csv` is the import list) | Group to confirm (B-08) |
+| Jira with epics, stories, tasks, two sprints | Live WWTP board; `project-workflow.md` | Structure and two Part 1 sprints verified; tutor listed as Viewer in the Access table on 23 October; actual tutor login unobserved (B-08) |
 | Deployed on GitHub Pages | footer link | Met: public repository, Pages enabled from `main` `/` (B-09) |
 
 ## index.html
@@ -58,10 +59,10 @@ and how to check it.
 | Postcode | exactly 4 digits | `pattern="[0-9]{4}"` |
 | Email | valid format | `type="email"` |
 | Phone | 8 to 12 digits | `type="tel"`, `pattern="[0-9]{8,12}"` |
-| Skill list | check boxes | `name="skills[]"` |
-| Other skills | textarea | `<textarea>`, the only optional field |
+| Skill list | check boxes | Two independently required controls, HTML (`value="html"`) and CSS (`value="css"`), both with `name="skills[]"` |
+| Other skills | textarea | Optional `<textarea>` |
 | Labels on all inputs | | `<label for>` or wrapping `<label>` on every control |
-| All fields except textarea required | | `required` on each (see `decisions.md` D-04) |
+| All fields except textarea required | | Required text fields, state selection, gender group and both skill checkboxes. Additional skills appear only in the optional textarea (D-04, B-13) |
 | POST to formtest.php | | `method="post" action="https://mercury.swin.edu.au/it000000/formtest.php"` |
 | Form layout using Flexbox or Grid | | `.form-grid` (Grid) and `.choices` (Flexbox) in `apply.css` |
 
@@ -71,12 +72,12 @@ and how to check it.
 |---|---|
 | Group name and class day/time, nested list | `#group-details`: Wednesday, 09:00 to 12:00, tutor Thomas Harrison |
 | Member contributions and quotes, definition list | `dl.members` |
-| Quote in first language + English translation | `dd.quote` with `lang="vi"` for Bui Dang Minh (others B-04) |
-| Group photo under 300 KB in `<figure>` with caption | `#group-photo` (placeholder image, B-06) |
-| Fun facts table with caption | Removed at the coordinator's request on 20/10/2026; requirement not met |
+| Quote in first language + English translation | All four members have `dd.quote` with `lang="vi"` plus an English translation (B-04) |
+| Group photo under 300 KB in `<figure>` with caption | `#group-photo`: one captioned 1200 x 1320 JPEG portrait collage, 299185 bytes (under 300 KB). Original portraits retained. It is not a together photograph; tutor acceptance remains unverified (B-06) |
+| Fun facts table with caption | `#fun-facts` (all cells filled; the coordinator-selected entries for three members still need their confirmation, B-05) |
 | Styled student IDs | `.student-id` |
 | Bordered figure | `#group-photo { border: 4px solid #1d1d1f; }` |
-| Table styled with hex colours and hover | About-page table removed at the coordinator's request on 20/10/2026; requirement not met |
+| Table styled with hex colours and hover | `about.css` `#fun-facts`: hex colours, `:nth-child(even)` stripes, `tbody tr:hover td` |
 
 ## CSS
 
@@ -86,14 +87,17 @@ and how to check it.
 | Page-specific external stylesheet | `index.css`, `jobs.css`, `apply.css`, or `about.css` linked from its matching page |
 | At least one embedded CSS example on every page | `<style>` in each `<head>` |
 | At least one inline CSS example on every page | one `style="..."` per page |
-| Clear comments | Not met: code comments were removed on 18 October 2026 at the coordinator's request; see `docs/release-checklist.md` B-11 and B-12 |
+| Clear comments | Concise explanatory group comments in styles.css and all four page-specific stylesheets; final comment-only revision on 23 October |
+| External-source acknowledgements | Adjacent HTML/CSS comments for the logo, company information, Country statement, form guidance/state names and shared map |
+| GenAI acknowledgements and prompts | index.html identifies tools, general use and a translated prompt summary; other sources refer to it. Only the translated summary remains in the current submission, not a verbatim prompt record. Exact builds and historical runtimes remain unverified (B-11 Partial) |
 | Wide range of selectors | universal `*`, element, class, id, `element.class`, descendant, child `>`, adjacent `+`, grouping, attribute `[type="submit"]`, `:hover`, `:visited`, `:focus`, `:first-child`, `:nth-child(even)` |
 | Responsive layout | viewport meta tag + `@media` at 1024, 768 and 480 px; `max-width: 100%` images; `%` widths |
 | Accessibility best practices | visible focus outline, underlined links, high-contrast colours, `em` font sizes, `line-height: 1.6`, no colour-only cues |
 
 ## Course scope
 
-Everything used comes from the Week 1 to Week 6 material:
+The core techniques map to Week 1 to Week 6 material. The map iframe is an additional
+HTML element explicitly identified below:
 
 | Item | Week / source |
 |---|---|
@@ -103,4 +107,4 @@ Everything used comes from the Week 1 to Week 6 material:
 | External, embedded and inline CSS, selectors, pseudo-classes, colours, fonts, background image, box model, borders | Week 4, Lecture 4 and Lab 4 |
 | `float`/`clear`, `box-sizing`, `display`, Flexbox, Grid, `overflow-x`, viewport meta, `@media`, `@media print`, units | Week 5, Lectures 5 and 6, layout page, Flexbox Froggy, Grid Garden |
 | Accessibility (labels, alt, headings, contrast, focus, `aria-labelledby`), web ethics, dark patterns | Week 6 |
-| `<iframe>` (Google Map on `jobs.html`) | **Outside the Week 1 to 6 slides**; added at the group's request, explained in `decisions.md` D-15 |
+| `<iframe>` (Google Map in the shared footer of all four pages) | **Outside the Week 1 to 6 slides**; added at the group's request, explained in `decisions.md` D-15 |

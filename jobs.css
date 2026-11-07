@@ -1,3 +1,5 @@
+/* Keep the aside at 25% width and clear the role floats. */
+/* GenAI acknowledgement: see index.html. */
 aside {
   float: right;
   width: 25%;
@@ -24,6 +26,7 @@ aside ul {
   overflow: hidden;
 }
 
+/* Float each fact term beside its value. */
 .job-facts {
   background-color: #f5f5f7;
   padding: 0.8em 1em;
@@ -54,14 +57,13 @@ aside ul {
   margin-bottom: 0.3em;
 }
 
-
 .clear {
   clear: both;
 }
 
-
-
+/* Remove floats on smaller screens. */
 @media screen and (max-width: 768px) {
+
   aside {
     float: none;
     width: 100%;
@@ -79,6 +81,7 @@ aside ul {
 
 }
 
+/* Keep the aside in document flow when printed. */
 @media print {
   aside {
     float: none;

@@ -1,0 +1,415 @@
+/* Show the skip link on keyboard focus. */
+/* GenAI acknowledgement: see index.php. */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1em;
+  padding: 0.75em 1em;
+  color: #ffffff;
+  background-color: #1d1d1f;
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: 0.5em;
+  color: #ffffff;
+  outline: 3px solid #ff9f0a;
+}
+
+/* Use border-box sizing and visible focus styles. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #1d1d1f;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+  color: #1d1d1f;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.05em;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:visited {
+  color: #5b3a99;
+}
+
+a:hover {
+  color: #003d7a;
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid #0058b0;
+}
+
+#site-header a:focus {
+  outline: 3px solid #ff9f0a;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Share navigation and mark the current page. */
+#site-header {
+  background-color: #1d1d1f;
+  color: #f5f5f7;
+  padding: 0.6em 0;
+}
+
+#site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  color: #f5f5f7;
+  text-decoration: none;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.brand img {
+  background-color: #f5f5f7;
+  border-radius: 10px;
+  padding: 4px;
+  margin-right: 0.6em;
+}
+
+.brand:visited {
+  color: #f5f5f7;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 0.5em 0.9em;
+  color: #f5f5f7;
+  text-decoration: none;
+  border-bottom: 3px solid #1d1d1f;
+}
+
+nav a:visited {
+  color: #f5f5f7;
+}
+
+nav a:hover {
+  color: #ffffff;
+  border-bottom-color: #a1a1a6;
+}
+
+nav a.current {
+  border-bottom-color: #2997ff;
+  font-weight: bold;
+}
+
+.project-banner {
+  margin: 0;
+  padding: 0.5em 0;
+  background-color: #fff3c4;
+  border-bottom: 1px solid #b07d00;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Share section spacing and button styles. */
+main {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+main section {
+  margin-bottom: 2.5em;
+}
+
+main > .container > section {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+h1 + p {
+  font-size: 1.2em;
+  color: #424245;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.6em 1.4em;
+  margin: 0.3em 0.6em 0.3em 0;
+  border-radius: 980px;
+  background-color: #0071e3;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:visited {
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #0058b0;
+  color: #ffffff;
+}
+
+.button.secondary {
+  background-color: #ffffff;
+  color: #0066cc;
+  border: 2px solid #0071e3;
+}
+
+.button.secondary:hover {
+  background-color: #e8f2fd;
+}
+
+.note {
+  background-color: #f5f5f7;
+  border-left: 4px solid #86868b;
+  padding: 0.8em 1em;
+  font-size: 0.95em;
+}
+
+.ref {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: #f5f5f7;
+  padding: 0.1em 0.4em;
+}
+
+/* Keep wide tables scrollable within their wrapper. */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  margin-top: 1em;
+}
+
+caption {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 0.5em;
+}
+
+th, td {
+  border: 1px solid #d2d2d7;
+  padding: 0.6em 0.8em;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background-color: #1d1d1f;
+  color: #ffffff;
+}
+
+tbody th {
+  background-color: #f5f5f7;
+}
+
+.placeholder {
+  background-color: #fff3c4;
+  border: 1px dashed #b07d00;
+  padding: 0 0.3em;
+}
+
+/* Arrange the shared footer columns. */
+#site-footer {
+  background-color: #f5f5f7;
+  color: #424245;
+  padding: 2em 0 1em;
+  font-size: 0.9em;
+  border-top: 1px solid #d2d2d7;
+}
+
+#site-footer h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.4em;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 0.6fr 1.4fr;
+  gap: 1.5em;
+}
+
+.footer-columns section {
+  min-width: 0;
+  margin-bottom: 1em;
+  overflow-wrap: break-word;
+}
+
+#site-footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#site-footer li {
+  margin-bottom: 0.3em;
+}
+
+#site-footer li ul {
+  margin-top: 0.5em;
+}
+
+#site-footer li ul li {
+  margin-bottom: 0.5em;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 240px;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+}
+
+.footer-map p {
+  margin: 0.5em 0 0;
+}
+
+.disclaimer {
+  border-top: 1px solid #d2d2d7;
+  padding-top: 1em;
+  margin-bottom: 0;
+}
+
+/* Reflow navigation and footer columns on smaller screens. */
+@media screen and (max-width: 1024px) {
+  .footer-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.9em;
+  }
+
+  h2 {
+    font-size: 1.45em;
+  }
+
+  #site-header .container {
+    justify-content: center;
+  }
+
+  nav ul {
+    text-align: center;
+    margin-top: 0.4em;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 94%;
+  }
+
+  nav a {
+    padding: 0.4em 0.6em;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* Hide navigation, search and action buttons in print. */
+@media print {
+  nav,
+  #search,
+  .button {
+    display: none;
+  }
+
+  body {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+}
+
+/* Show server-side messages. */
+.error-summary,
+.error-message {
+  border: 2px solid #b3261e;
+  background-color: #fdecea;
+  padding: 1em 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.error-summary h2 {
+  font-size: 1.25em;
+}
+
+.error-summary ul {
+  margin-bottom: 0;
+}
+
+.error-summary a,
+.error-summary a:visited {
+  color: #8c1d18;
+}
+
+.success-message {
+  border: 2px solid #1e7a3c;
+  background-color: #e8f6ec;
+  padding: 1em 1.2em;
+  margin-bottom: 1.5em;
+}

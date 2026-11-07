@@ -2,7 +2,10 @@
 
 COS10026 Applied Web Project - Part 1.
 
-> **Status: UNSIGNED DRAFT. Not submitted.**
+> **Status of this file: UNSIGNED DRAFT. This Markdown template was not submitted.**
+> Bui Dang Minh's separate official `Group3_GroupAgreement.docx` is shown as Submitted
+> in Canvas (attempt 1), verified 23 October 2026. Other members' receipts are unverified.
+> This draft does not replace that official document or establish anyone's signature.
 >
 > Two things matter here:
 >
@@ -80,7 +83,7 @@ develops at least one page and its CSS.
 | A member misses an agreed deadline | Raise it at the next stand-up, agree a new date, record it in Jira |
 | A member is unreachable for more than one week | Contact the tutor rather than silently absorbing the work |
 | We disagree on a technical decision | Record both options in `decisions.md`, pick one, and note why |
-| Someone falls behind because of illness or workload | Redistribute openly and record it, so the peer evaluation reflects reality |
+| Someone falls behind because of illness or workload | Redistribute openly and record the actual contributions; Peer and Self Evaluation is not required for this submission (student confirmation, 23 October 2026) |
 
 ## 7. Declaration
 

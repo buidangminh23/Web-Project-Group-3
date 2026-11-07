@@ -3,28 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Meet Group 3, the COS10026 students who built the Apple Careers recruitment website: class details, contributions, quotes and group photo.">
-  <meta name="keywords" content="Group 3, COS10026, Swinburne, team members, student IDs, contributions">
+  <meta name="description" content="Meet Group 3, the COS10026 students who built the Apple Careers recruitment website: class details, contributions, quotes, group photo and fun facts.">
+  <meta name="keywords" content="Group 3, COS10026, Swinburne, team members, student IDs, contributions, fun facts">
   <meta name="author" content="Group 3, COS10026">
   <title>Careers at Apple - About Group 3</title>
 
-
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="styles.css?v=20261023">
+  <link rel="stylesheet" href="about.css?v=20261023-collage1">
 
   <style>
-    .todo-note {
-      border: 2px dashed #b07d00;
-      background-color: #fffaeb;
-      padding: 0.8em 1em;
+    #fun-facts caption {
+      font-weight: bold;
+      color: #1d1d1f;
     }
   </style>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header id="site-header">
     <div class="container">
       <a class="brand" href="index.html">
+
+        <!-- Logo glyph adapted from Devicon apple-original, https://devicon.dev/ (MIT); Apple trademark, educational use. -->
         <img src="images/logo.png" alt="Apple logo" width="48" height="48">
         Apple Careers
       </a>
@@ -44,7 +46,7 @@
     <strong>Student project for COS10026 at Swinburne.</strong> This is not an official Apple website and all jobs are fictional.
   </p>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <div class="container">
 
       <h1>About Group 3</h1>
@@ -53,11 +55,7 @@
         Apple Careers website using only HTML5 and CSS3.
       </p>
 
-      <p class="todo-note">
-        <strong>Before submission:</strong> every item shown in square brackets with a yellow highlight
-        must be replaced with the real details of that team member (page owned and other work).
-      </p>
-
+      <!-- GenAI acknowledgement: see index.html. -->
       <section id="group-details" aria-labelledby="group-heading">
         <h2 id="group-heading">Group and class details</h2>
         <ul>
@@ -107,25 +105,80 @@
           <dd>English translation: &quot;If you keep grinding an iron bar, one day it becomes a needle.&quot; Hard work always pays off.</dd>
 
           <dt>Le Ho Hoang Lan <span class="student-id">106229050</span></dt>
-          <dd><strong>Pages:</strong> <span class="placeholder">[Page owned and its CSS]</span></dd>
-          <dd><strong>Other work:</strong> <span class="placeholder">[Other work]</span></dd>
+          <dd><strong>Pages:</strong> jobs.html (jobs page) and its CSS.</dd>
+          <dd><strong>Other work:</strong> Assistance and support with assignments, offering ideas.</dd>
+          <dd class="quote"><span lang="vi">&quot;Đi một ngày đàng, học một sàng khôn.&quot;</span> (Vietnamese)</dd>
+          <dd>English translation: &quot;A day of travelling brings a wealth of knowledge.&quot; New experiences help us learn and grow.</dd>
 
           <dt>Nguyen Quang Thang <span class="student-id">106202475</span></dt>
-          <dd><strong>Pages:</strong> <span class="placeholder">[Page owned and its CSS]</span></dd>
-          <dd><strong>Other work:</strong> <span class="placeholder">[Other work]</span></dd>
+          <dd><strong>Pages:</strong> apply.html (apply page) and its CSS.</dd>
+          <dd><strong>Other work:</strong> Assistance and support with assignments, offering ideas.</dd>
+          <dd class="quote"><span lang="vi">&quot;Không thầy đố mày làm nên.&quot;</span> (Vietnamese)</dd>
+          <dd>English translation: &quot;Teachers guide us towards success.&quot; Good guidance is important for learning.</dd>
 
           <dt>Tran Vo Nhat Minh <span class="student-id">106233462</span></dt>
-          <dd><strong>Pages:</strong> <span class="placeholder">[Page owned and its CSS]</span></dd>
-          <dd><strong>Other work:</strong> <span class="placeholder">[Other work]</span></dd>
+          <dd><strong>Pages:</strong> about.html (about page) and its CSS + styles.</dd>
+          <dd><strong>Other work:</strong> Assistance and support with assignments, offering ideas.</dd>
+          <dd class="quote"><span lang="vi">&quot;Học đi đôi với hành.&quot;</span> (Vietnamese)</dd>
+          <dd>English translation: &quot;Learning goes together with practice.&quot; Knowledge is more useful when applied in practice.</dd>
         </dl>
       </section>
 
       <section id="photo" aria-labelledby="photo-heading">
         <h2 id="photo-heading">Our group</h2>
         <figure id="group-photo">
-          <img src="images/group-photo.jpg" alt="Group 3 members together on campus" width="800" height="450">
-          <figcaption>Group 3, COS10026 Web Technology Project, 2026.</figcaption>
+          <!-- Coordinator-supplied deterministic collage of the four original portraits; faces unchanged. -->
+          <img src="images/group-collage.jpg" alt="Four Group 3 member portraits arranged in two rows" width="1200" height="1320">
+          <figcaption>Group 3 member portrait collage. Top row: Tran Vo Nhat Minh and Bui Dang Minh. Bottom row: Le Ho Hoang Lan and Nguyen Quang Thang.</figcaption>
         </figure>
+      </section>
+
+      <section id="fun-facts" aria-labelledby="facts-heading">
+        <h2 id="facts-heading">Fun facts</h2>
+        <div class="table-wrapper">
+          <table>
+            <caption>Fun facts about the members of Group 3</caption>
+            <thead>
+              <tr>
+                <th>Member</th>
+                <th>Dream job</th>
+                <th>Coding snack</th>
+                <th>Hometown</th>
+                <th>Favourite Apple product</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bui Dang Minh</td>
+                <td>Data scientist</td>
+                <td>Matcha latte</td>
+                <td>Hanoi, Vietnam</td>
+                <td>MacBook Air</td>
+              </tr>
+              <tr>
+                <td>Le Ho Hoang Lan</td>
+                <td>Software engineer</td>
+                <td>Iced coffee</td>
+                <td>Hanoi, Vietnam</td>
+                <td>MacBook Pro</td>
+              </tr>
+              <tr>
+                <td>Nguyen Quang Thang</td>
+                <td>Full-stack developer</td>
+                <td>Potato chips</td>
+                <td>Hanoi, Vietnam</td>
+                <td>iPhone</td>
+              </tr>
+              <tr>
+                <td>Tran Vo Nhat Minh</td>
+                <td>UI/UX designer</td>
+                <td>Milk tea</td>
+                <td>Hanoi, Vietnam</td>
+                <td>iPad Pro</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section id="why-apple" aria-labelledby="why-heading">
@@ -174,8 +227,10 @@
             <li><a href="about.html">About us</a></li>
           </ul>
         </section>
+
         <section class="footer-map" aria-labelledby="footer-location">
           <h2 id="footer-location">Apple headquarters</h2>
+          <!-- Map supplied by Google Maps: Apple Park, Cupertino; https://www.google.com/maps/place/Apple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014 -->
           <iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sApple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014!6i15"
                   title="Google Map showing Apple Park, Apple headquarters in Cupertino, California"
                   width="600" height="240" loading="lazy"></iframe>

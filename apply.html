@@ -8,9 +8,8 @@
   <meta name="author" content="Group 3, COS10026">
   <title>Careers at Apple - Job application</title>
 
-
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="apply.css">
+  <link rel="stylesheet" href="styles.css?v=20261023">
+  <link rel="stylesheet" href="apply.css?v=20261023-skills2">
 
   <style>
     .required-star {
@@ -28,9 +27,13 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header id="site-header">
     <div class="container">
       <a class="brand" href="index.html">
+
+        <!-- Logo glyph adapted from Devicon apple-original, https://devicon.dev/ (MIT); Apple trademark, educational use. -->
         <img src="images/logo.png" alt="Apple logo" width="48" height="48">
         Apple Careers
       </a>
@@ -50,7 +53,7 @@
     <strong>Student project for COS10026 at Swinburne.</strong> This is not an official Apple website and all jobs are fictional.
   </p>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <div class="container">
 
       <h1>Job application</h1>
@@ -59,6 +62,7 @@
         Fields marked with <span class="required-star">*</span> are required.
       </p>
 
+      <!-- Privacy and dark-pattern guidance: Swinburne COS10026 Canvas, Week 06: Dark patterns examples in web development. -->
       <section id="privacy" aria-labelledby="privacy-heading">
         <h2 id="privacy-heading">Why we ask for this information</h2>
         <p>
@@ -79,6 +83,8 @@
         The test server's Back button is currently unavailable.
       </p>
 
+      <!-- GenAI acknowledgement: see index.html. -->
+      <!-- Form fields, patterns and POST test endpoint follow Swinburne COS10026 Lecture 3: HTML Forms and Structural Elements and Week 3 HTML form lab. -->
       <form id="application" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php"
             target="_blank" rel="noopener" aria-describedby="submission-help">
 
@@ -157,6 +163,7 @@
               <label for="state">State or territory <span class="required-star">*</span>
                 <span class="hint">Select your Australian state or territory</span>
               </label>
+              <!-- State and territory names: Treasury Corporation of Victoria, State & Commonwealth Relationship, https://www.tcv.vic.gov.au/about-tcv/victoria-s-economy/state-commonwealth-relationship -->
               <select id="state" name="state" required>
                 <option value="">Please select</option>
                 <option value="VIC">Victoria</option>
@@ -183,6 +190,7 @@
         <fieldset>
           <legend>Contact details</legend>
           <div class="form-grid">
+
             <div class="field">
               <label for="email">Email address <span class="required-star">*</span></label>
               <input type="email" id="email" name="email" placeholder="name@domain.com" required>
@@ -201,19 +209,15 @@
 
         <fieldset>
           <legend>Skills</legend>
-          <p>Tick every skill you have. HTML and CSS are essential for both roles. <span class="required-star">*</span></p>
+          <p>Confirm both essential skills. HTML and CSS are required for both advertised roles. <span class="required-star">*</span></p>
           <div class="choices">
-            <label><input type="checkbox" name="skills[]" value="html-css" required> HTML and CSS</label>
-            <label><input type="checkbox" name="skills[]" value="accessibility"> Web accessibility</label>
-            <label><input type="checkbox" name="skills[]" value="responsive"> Responsive design</label>
-            <label><input type="checkbox" name="skills[]" value="ux-research"> User research and testing</label>
-            <label><input type="checkbox" name="skills[]" value="git"> Git and GitHub</label>
-            <label><input type="checkbox" name="skills[]" value="jira"> Agile and Jira</label>
+            <label><input type="checkbox" name="skills[]" value="html" required> HTML <span class="required-star">*</span></label>
+            <label><input type="checkbox" name="skills[]" value="css" required> CSS <span class="required-star">*</span></label>
           </div>
 
           <div class="field">
             <label for="other-skills">Other skills
-              <span class="hint">Optional. You can also tell us about any adjustments you need for the interview.</span>
+              <span class="hint">Optional. Describe any additional skills you have, such as web accessibility, responsive design, user research, Git, GitHub, Agile or Jira. You may also mention interview adjustments.</span>
             </label>
             <textarea id="other-skills" name="other_skills" rows="5" cols="40"
                       placeholder="Tell us about other skills or experience..."></textarea>
@@ -263,8 +267,10 @@
             <li><a href="about.html">About us</a></li>
           </ul>
         </section>
+
         <section class="footer-map" aria-labelledby="footer-location">
           <h2 id="footer-location">Apple headquarters</h2>
+          <!-- Map supplied by Google Maps: Apple Park, Cupertino; https://www.google.com/maps/place/Apple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014 -->
           <iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sApple+Park,+One+Apple+Park+Way,+Cupertino,+CA+95014!6i15"
                   title="Google Map showing Apple Park, Apple headquarters in Cupertino, California"
                   width="600" height="240" loading="lazy"></iframe>

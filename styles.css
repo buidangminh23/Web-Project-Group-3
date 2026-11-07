@@ -1,7 +1,22 @@
+/* Show the skip link on keyboard focus. */
+/* GenAI acknowledgement: see index.html. */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1em;
+  padding: 0.75em 1em;
+  color: #ffffff;
+  background-color: #1d1d1f;
+  z-index: 10;
+}
 
+.skip-link:focus {
+  top: 0.5em;
+  color: #ffffff;
+  outline: 3px solid #ff9f0a;
+}
 
-
-
+/* Use border-box sizing and visible focus styles. */
 * {
   box-sizing: border-box;
 }
@@ -75,8 +90,7 @@ img {
   margin-right: auto;
 }
 
-
-
+/* Share navigation and mark the current page. */
 #site-header {
   background-color: #1d1d1f;
   color: #f5f5f7;
@@ -142,8 +156,6 @@ nav a.current {
   font-weight: bold;
 }
 
-
-
 .project-banner {
   margin: 0;
   padding: 0.5em 0;
@@ -153,6 +165,7 @@ nav a.current {
   font-size: 0.9em;
 }
 
+/* Share section spacing and button styles. */
 main {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -216,6 +229,7 @@ h1 + p {
   padding: 0.1em 0.4em;
 }
 
+/* Keep wide tables scrollable within their wrapper. */
 .table-wrapper {
   overflow-x: auto;
 }
@@ -253,8 +267,7 @@ tbody th {
   padding: 0 0.3em;
 }
 
-
-
+/* Arrange the shared footer columns. */
 #site-footer {
   background-color: #f5f5f7;
   color: #424245;
@@ -315,8 +328,7 @@ tbody th {
   margin-bottom: 0;
 }
 
-
-
+/* Reflow navigation and footer columns on smaller screens. */
 @media screen and (max-width: 1024px) {
   .footer-columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -358,6 +370,7 @@ tbody th {
 
 }
 
+/* Hide navigation, search and action buttons in print. */
 @media print {
   nav,
   #search,

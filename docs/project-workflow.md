@@ -1,121 +1,74 @@
-# Proposed project workflow
+# Project workflow and Jira record
 
-COS10026 Applied Web Project - Part 1.
+COS10026 Applied Web Project - Part 1, Group 3. Checked 23 October 2026.
 
-> **Everything in this file is a proposal.** No Jira project exists, no sprint has
-> been run, and no retrospective has happened. Nothing here may be presented as
-> completed work. The rubric awards Jira marks for a real board the tutor can
-> open, not for this document.
+The live project is [WWTP](https://cos10026-group3.atlassian.net/jira/software/projects/WWTP/summary).
+The board contains 41 work items: 8 epics, 11 stories and 22 tasks, with real assignees, priorities
+and the `applied-web-part1` label. The Jira Access table lists the tutor with the Viewer role on 23 October 2026;
+actual tutor login remains unobserved. No private tutor contact is published here.
 
----
+## 1. Part 1 sprints
 
-## 1. Why two sprints
-
-The brief requires *"user stories, epics, tasks, and at least two sprints"*. The
-backlog in `jira-backlog.csv` is split so that each sprint ends with something
-demonstrable:
-
-| Sprint | Theme | Ends with |
+| Sprint | Recorded dates | Goal |
 |---|---|---|
-| **Sprint 1** | Foundations and content pages | Shared shell, stylesheet, Home and Jobs complete and validating |
-| **Sprint 2** | Form, team page, quality and release | Apply and About complete, everything validated, site deployed |
+| AWP Part 1 Sprint 1 | 7-14 October 2026 | Review shared shell, Home, Jobs and governance |
+| AWP Part 1 Sprint 2 | 15 October-1 November 2026 | Finish Apply, About, accessibility and submission |
 
-Proposed load: Sprint 1 **37** story points, Sprint 2 **44**. Re-estimate these
-with your own team - points are only useful if the team sets them.
+Both Part 1 sprints are visible in the Jira reports selector. Sprint 2 is active. An older sprint
+named WWTP Sprint 1 also exists and must not be confused with the two Part 1 sprints above.
+Jira records were updated after some code work: the Sprint 1 activity includes items added on
+18 October. Planned sprint dates do not prove that every item was entered or completed within
+those dates. No stand-up, review or retrospective attendance is inferred from the board.
 
-Dependency order that matters: the shared shell (PROJ-13, PROJ-15) blocks every
-page, so it goes first. The group code confirmation (PROJ-11) blocks all content
-writing, so raise it in the first tutorial.
+## 2. Backlog and status evidence
 
----
+The live Jira board is authoritative for issue keys, parents, assignees, sprint membership and
+current status. `jira-backlog.csv` is the original planning/import draft, not a live Jira export.
+Its `PROJ-n` references, `TBC` assignees and suggested estimates must not be presented as the
+current WWTP records or imported again over the live project.
 
-## 2. Backlog structure
+Evidence should accompany a status change: a code commit, validator result, browser check or
+submission receipt. A task with multiple acceptance criteria stays open until all are met.
+For example, generating a ZIP does not complete a task that also requires Canvas submission.
+The current portrait collage is below 300 KB and has a caption naming all four members. It does
+not establish that the members were photographed together; tutor acceptance remains unverified.
 
-`jira-backlog.csv` contains **41 issues**: 8 epics, 11 stories, 22 tasks.
+WWTP-21 now has an Apply-specific title consistent with its existing Apply epic, description and
+assignee. Its old About evidence comment was corrected to the authored Apply changes. WWTP-33
+is Done following verification of both complete vacancy descriptions. WWTP-43 is Done after
+the accessibility guideline/contrast review and published image/skip-link checks. WWTP-42 remains
+In Progress in the last verified Jira snapshot. New local browser checks are recorded in
+`test-report.md` section 9; no live Jira status change is inferred from this documentation update.
 
-| Column | Jira field it maps to |
-|---|---|
-| Issue Type | Work type (Epic / Story / Task) |
-| Summary | Summary |
-| Description | Description |
-| Parent | Parent (for Story and Task) or Epic Link, depending on your Jira version |
-| Priority | Priority |
-| Labels | Labels - semicolon separated, change the separator if your importer wants commas |
-| Sprint | Sprint |
-| Story Points | Story point estimate (custom field) |
-| Proposed Assignee | Assignee - currently `TBC`, fill in with real names |
-| Acceptance Criteria | Usually a custom field; if you do not have one, append it to the Description |
-| Depends On | Issue links of type *blocks* / *is blocked by* |
+WWTP-27 remains In Progress: Minh's Group Agreement receipt is verified, and the other members'
+receipts are not. WWTP-47 remains In Progress for the group: Minh confirmed completing his
+interview, while other members' attendance remains unverified. WWTP-25 and WWTP-46 are In
+Progress for final ZIP preparation and Canvas submission; generating the final archive does not
+establish submission. WWTP-44 records the final deployment run and verified commit after the documentation update.
 
-### Honest note on importing
+The canonical remaining requirements and their issue links are in `release-checklist.md`.
+This workflow document does not duplicate live status totals, which change as work is completed.
 
-This CSV is written as **valid RFC 4180 CSV** (fields containing commas are
-quoted). It has **not** been tested against a Jira importer, because no Jira
-instance was available. Jira's CSV import is version-specific and fussy:
-
-- `Parent` vs `Epic Link` differs between Jira versions and between team-managed
-  and company-managed projects.
-- Story points and acceptance criteria are custom fields whose names differ per
-  site.
-- Sprint values must usually match an existing sprint name, or be created first.
-- The `PROJ-n` keys used in `Parent` and `Depends On` are **placeholders**.
-  Real keys are assigned at import time, so you will most likely have to re-link
-  parents and dependencies by hand afterwards.
-
-If the import fights you, creating 41 issues by hand is perfectly reasonable and
-often faster. **Do not claim the CSV imported cleanly unless it did.**
-
----
-
-## 3. Proposed ceremonies
-
-| Ceremony | When | Purpose |
-|---|---|---|
-| Sprint planning | Start of each sprint | Pull issues into the sprint and confirm owners |
-| Stand-up | Each class, 5-10 minutes | What is done, what is next, what is blocked |
-| Sprint review | End of each sprint | Walk the working site, not the board |
-| Retrospective | End of each sprint | One thing to keep, one thing to change |
-
-Record real dates as they happen. Do not pre-fill them.
-
----
-
-## 4. Ownership rule from the brief
-
-> *"Each student should be responsible for developing at least one page,
-> including its required CSS styling."*
-
-Two consequences worth planning for:
-
-1. **Page ownership must be real and visible in the Git history.** One person
-   pushing everyone's work makes it look as though only one person worked. Each
-   member should commit their own page under their own account.
-2. **Shared CSS changes affect all pages.** Each page has its own stylesheet,
-   while `styles.css` holds the common base, navigation, footer and responsive
-   rules. Agree who changes shared rules before editing `styles.css`.
-
-Suggested split for a group of four - **confirm with your own team, do not adopt
-this silently:**
+## 3. Ownership and integration
 
 | Member | Page | Page stylesheet |
 |---|---|---|
-| 1 | `index.html` | `index.css`; coordinate shared rules with member 2 |
-| 2 | `jobs.html` | `jobs.css`; coordinate shared rules with member 1 |
-| 3 | `apply.html` | `apply.css` |
-| 4 | `about.html` | `about.css` |
+| Bui Dang Minh (105716425) | `index.html` | `index.css`; shared `styles.css` |
+| Le Ho Hoang Lan (106229050) | `jobs.html` | `jobs.css` |
+| Nguyen Quang Thang (106202475) | `apply.html` | `apply.css` |
+| Tran Vo Nhat Minh (106233462) | `about.html` | `about.css` |
 
-For a group of three, member 4's work is usually split between members 1 and 3.
+`contributions.md` links this ownership to the actual author records in Git. Each member's page
+work is distinct from the repository owner's merge and integration work. Shared stylesheet
+changes require checks on all four pages.
 
----
+## 4. Working conventions
 
-## 5. Branch and commit conventions
-
-A workable convention, since the brief does not prescribe one:
-
-- One branch per page: `feature/jobs-page`, `feature/apply-form`.
-- Small, described commits: `Add floated aside to jobs page` beats `update`.
-- Pull `main` before starting each session, to keep stylesheet conflicts small.
-- Never commit directly to `main` once more than one person is working.
-
-If two people edit `styles.css` at once, review both changes and check all four
-pages after resolving the conflict.
+- Coordinate file ownership before editing shared files, and preserve concurrent work.
+- Keep commits focused and descriptive; retain the actual author's identity.
+- Fetch and inspect the latest branch before integration, then validate changed pages and styles.
+- Update Jira with the work that was actually verified. Keep missing personal details, tutor
+  access and submission receipts open until they are supplied or observed.
+- Use the existing interview guide to rehearse explanations and live changes; preparation is
+  separate from attendance or an assessed interview outcome. Minh confirmed on 23 October that
+  his interview was completed in class; no grade is recorded here.

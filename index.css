@@ -1,5 +1,8 @@
+/* Arrange the hero text and illustration. */
+/* GenAI acknowledgement: see index.html. */
 #hero {
   background-color: #fbfbfd;
+  /* Original AI-assisted background; acknowledgement: index.html. */
   background-image: url("images/bg-hero.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -35,6 +38,7 @@
   margin-top: 0;
 }
 
+/* Wrap the search label and controls. */
 .search-row {
   display: flex;
   flex-wrap: wrap;
@@ -81,8 +85,7 @@
   padding: 1.5em;
 }
 
-
-
+/* Stack hero content on smaller screens. */
 @media screen and (max-width: 1024px) {
   .hero-text {
     width: 55%;
