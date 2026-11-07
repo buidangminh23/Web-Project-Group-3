@@ -1,0 +1,143 @@
+/* Lay out the HR manager login and management pages. */
+/* GenAI acknowledgement: see index.php. */
+.login-box {
+  max-width: 28em;
+  margin: 0 auto;
+}
+
+.manage-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.manage-heading h1,
+.manage-heading p {
+  margin: 0;
+}
+
+.manage-panels {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+}
+
+.manage-panels section {
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+.manage-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.manage-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.manage-field label {
+  font-weight: bold;
+}
+
+.manage-field input,
+.manage-field select {
+  width: 100%;
+  min-height: 3em;
+  padding: 0.6em 0.7em;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid #86868b;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.manage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0;
+}
+
+.manage-actions .button {
+  margin: 0;
+}
+
+.confirm-delete {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.confirm-delete input {
+  flex: none;
+  margin-top: 0.4em;
+}
+
+button.button {
+  border: 2px solid #0071e3;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button.button:hover {
+  border-color: #0058b0;
+}
+
+button.button.danger {
+  background-color: #b3261e;
+  border-color: #b3261e;
+}
+
+button.button.danger:hover {
+  background-color: #8c1d18;
+  border-color: #8c1d18;
+}
+
+button.button.small {
+  padding: 0.25em 0.75em;
+  margin: 0;
+}
+
+/* Keep the hidden status labels inside the scrolling wrapper. */
+.table-wrapper {
+  position: relative;
+}
+
+.eoi-table {
+  font-size: 0.9em;
+  min-width: 96em;
+}
+
+.status-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.status-form select {
+  min-height: 2em;
+  font-size: 1em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/* Stack the two management panels on smaller screens. */
+@media screen and (max-width: 768px) {
+  .manage-panels {
+    grid-template-columns: 1fr;
+  }
+}
