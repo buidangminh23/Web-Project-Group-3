@@ -1,9 +1,13 @@
 # Apple Careers - recruitment website
 
 COS10026 Web Technology Project
-**Assessment 2: Applied Web Project - Part 1** (group component, 70 marks) - Group 3
+**Assessment 2: Applied Web Project** - Group 3
 
-A static recruitment website for **Apple** (the Apple Online Store web team in Sydney),
+**Part 2** is in [`project2/`](project2/): the same site as a PHP and MySQL application that runs on
+XAMPP from `project2/index.php`. Setup, requirements and test results are in
+[`docs/part2-checklist.md`](docs/part2-checklist.md). The rest of this README describes Part 1.
+
+**Part 1** (group component, 70 marks) is a static recruitment website for **Apple** (the Apple Online Store web team in Sydney),
 built with HTML5 and CSS3 only. No JavaScript, no frameworks, no build step.
 
 - Live site: https://dangminh232006.github.io/Web-Project-Group-3/
